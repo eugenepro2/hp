@@ -1,0 +1,15 @@
+---
+title: Index Page
+---
+extends layouts/_layout
+block content
+  include partials/_breadcrumbs
+  include partials/_card-item
+  include partials/_catalog-tags
+  include partials/_catalog-filter
+  -var hiddenClass = ''
+  include partials/_catalog-cards
+  include partials/_catalog-load-more
+  include partials/_index-banner
+  include partials/_index-form
+  include partials/_index-advantages
