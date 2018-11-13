@@ -14,7 +14,83 @@ section.order-form
                         label.order-form__props-label(for="")
                             input(type="radio")
                             span Физлицо
-                .order-form__accordion
-                    .order-form__accordion-item
-                        .order-form__accordion-header
-                        .order-form__accordion-
+
+                .order-form__accordion.order-form-accordion
+                
+                    .order-form-accordion__item
+                        .order-form-accordion__head
+                            .order-form-accordion__title 1 шаг 
+                                span –Реквизиты 
+                            .order-form-accordion__edit Изменить
+                        .order-form-accordion__body
+                            .order-form-accordion__col
+                                    .order-form-accordion__text Автозаполнение по ИНН
+                                    input.order-form-accordion__input(type="text" placeholder="Введите ИНН")                               
+                            .order-form-accordion__col
+                                input.order-form-accordion__input(type="text" placeholder="Наименование юрлица") 
+                                input.order-form-accordion__input(type="text" placeholder="Юридический адрес") 
+                                input.order-form-accordion__input(type="text" placeholder="Фактический адрес") 
+                                input.order-form-accordion__input(type="text" placeholder="ИНН") 
+                                input.order-form-accordion__input(type="text" placeholder="КПП") 
+                                input.order-form-accordion__input(type="text" placeholder="Р/С") 
+                                input.order-form-accordion__input(type="text" placeholder="К/С") 
+                        .order-form-accordion__button Продолжить оформление
+
+                    .order-form-accordion__item
+                        .order-form-accordion__head
+                            .order-form-accordion__title 2 шаг 
+                                span –Выбор доставки
+                            .order-form-accordion__edit Изменить
+                        .order-form-accordion__body
+                            .order-form-accordion__col
+                                 label.order-form-accordion__props-label(for="")
+                                    input(type="radio")
+                                    span Самовывоз                              
+                            .order-form-accordion__col
+                                label.order-form-accordion__props-label(for="")
+                                        input(type="radio")
+                                        span Доставка 
+                                input.order-form-accordion__input(type="text" placeholder="Город") 
+                                input.order-form-accordion__input(type="text" placeholder="Улица") 
+                                input.order-form-accordion__input(type="text" placeholder="Дом") 
+                                input.order-form-accordion__input(type="text" placeholder="Квартира/Офис") 
+                        .order-form-accordion__button Продолжить оформление
+
+                    .order-form-accordion__item
+                        .order-form-accordion__head
+                            .order-form-accordion__title 3 шаг 
+                                span –Контактные данные и подтверждение
+                        .order-form-accordion__body
+                            .order-form-accordion__col
+                                .order-form-accordion__text Заказчик
+                                input.order-form-accordion__input(type="text" placeholder="Имя") 
+                                input.order-form-accordion__input(type="text" placeholder="Как с вами связаться")                             
+                            .order-form-accordion__col
+                                .order-form-accordion__text 
+                                    span Получатель
+                                    label.order-form-accordion__checkbox(for="")
+                                        input(type="checkbox") 
+                                        span Одно лицо
+                                input.order-form-accordion__input(type="text" placeholder="Имя") 
+                                input.order-form-accordion__input(type="text" placeholder="Как с вами связаться") 
+                            .order-form-accordion__total
+                                .order-form-accordion__text Заказ #154
+                                .order-form-accordion__total
+                                    ul
+                                        li
+                                            span  Сумма
+                                            span  1 400 157 ₽
+                                        li
+                                            span  Сумма
+                                            span  1 400 157 ₽
+                                        li
+                                            span  Сумма
+                                            span  1 400 157 ₽
+                        .order-form-accordion__button Сформировать счет на оплату
+
+        .order-form__success
+            .order-form__success-title Спасибо!
+            .order-form__success-text Ваш заказ #154 оформлен в Happy Partner
+            .order-form__success-manager-text Ваш персональный менеджер
+            .order-form__success-manager-name Анна Галенда
+            .order-form__success-manager-phone +7 821 183-24-42

@@ -2,6 +2,9 @@
 title: Index Page
 ---
 extends layouts/_layout
+append vars
+  -var headerClass = 'header_dark'
+  -var headerLogoClass = 'header__logo_dark'
 block content
 
   include partials/_index-slider
@@ -12,3 +15,5 @@ block content
   include partials/_index-banner
   include partials/_index-form
   include partials/_index-advantages
+block scripts
+  

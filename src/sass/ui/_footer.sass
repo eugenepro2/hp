@@ -1,0 +1,139 @@
+.footer
+    background-color: #ffffff
+    border-top: 1px solid #f0eae4
+    &__inner
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        box-sizing: border-box
+        padding-top: 42px
+        padding-bottom: 78px
+    &__head
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        max-width: 655px
+        width: 100%
+    &__logo
+        width: 240px
+        height: 39px
+        background: url('../img/logo.png') no-repeat 50% 50%
+        background-size: contain
+        &_dark
+            background: url('../img/logo-dark.png') no-repeat 50% 50%
+    &__social-list
+        display: flex
+    &__social-icon
+        margin-right: 13px
+        display: flex
+        width: 32px
+        height: 32px
+        background: #f0eae4
+        &_vk
+            background: url('../img/svgo/vk.svg') no-repeat 50% 50%
+            &:hover
+                background: url('../img/svgo/vk-hover.svg') no-repeat 50% 50%
+        &_inst
+            background: url('../img/svgo/inst.svg') no-repeat 50% 50%
+            &:hover
+                background: url('../img/svgo/inst-hover.svg') no-repeat 50% 50%
+        &_fb
+            background: url('../img/svgo/fb.svg') no-repeat 50% 50%
+            &:hover
+                background: url('../img/svgo/fb-hover.svg') no-repeat 50% 50%
+        &_ok
+            background: url('../img/svgo/ok.svg') no-repeat 50% 50%
+            &:hover
+                background: url('../img/svgo/ok-hover.svg') no-repeat 50% 50%
+        &_tw
+            background: url('../img/svgo/tw.svg') no-repeat 50% 50%
+            &:hover
+                background: url('../img/svgo/tw-hover.svg') no-repeat 50% 50%
+    &__body
+        margin-top: 42px
+        display: flex
+        width: 100%
+    &__lists
+        margin-right: 60px
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        box-sizing: border-box
+        justify-content: space-between
+        align-content: space-between
+        height: 334px
+        width: 370px
+    &__list
+        width: 170px
+        &_address
+            width: 231px
+    &__list-title
+        font-size: 18px
+        line-height: 1.33
+        color: #644733
+    &__ul
+        margin-top: 10px
+    &__li 
+        display: block
+        font-size: 16px
+        line-height: 1.25
+        text-decoration: none
+        color: #a2a2a1
+        margin-bottom: 5px
+        &_address
+            margin-bottom: 8px
+    &__address
+        display: flex
+        flex-wrap: wrap
+        box-sizing: border-box
+        justify-content: space-between
+        align-content: space-between
+        height: 334px
+        width: 570px
+    &__search
+        position: relative
+    &__search-input
+        padding-left: 46px
+        position: relative
+        width: 430px
+        height: 45px
+        border-radius: 5px
+        border: solid 1px #f0eae4
+        font-size: 16px
+        &::placeholder
+            font-size: 16px
+            color: #b3b3b3
+           
+    &__search-icon
+        position: absolute
+        content: ''
+        display: block
+        width: 29px
+        height: 29px
+        top: 8px
+        left: 10px
+        background: url('../img/svgo/search.svg') no-repeat 50% 50%
+        z-index: 10
+        cursor: pointer
+    &__gift
+        position: absolute
+        right: 0
+        top: 36px
+        text-decoration: none
+    &__gift-img
+        width: 143px
+        height: 61px
+        background: #f0eae4
+    &__gift-text
+        margin-top: 30px
+        font-size: 16px
+        line-height: 1.25
+        color: #a2a2a1
+    &__copyright
+        padding: 25px 0
+        box-sizing: border-box
+        background-color: #f0eae4
+        font-size: 16px
+        line-height: 1.25
+        color: #a2a2a1

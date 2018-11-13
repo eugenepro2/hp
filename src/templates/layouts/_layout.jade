@@ -7,6 +7,9 @@ html
   body(class=bodyClass)
     //BEGIN out
     .out(class=outClass)
+      block vars
+        -var headerClass = '';
+        -var headerLogoClass = '';
       block header
         include ../partials/_header
       block content
