@@ -1,0 +1,146 @@
+.index-other
+    display: flex
+    box-sizing: border-box
+    padding-bottom: 120px
+    &__inner
+        display: flex
+.index-articles
+    position: relative
+    width: 50%
+    height: 680px
+    &__title
+        font-weight: 400
+        font-size: 32px
+        line-height: 0.88
+        color: #644733
+    &__item
+        position: relative
+        display: flex
+        margin-top: 45px
+        height: 200px
+        width: 470px
+        justify-content: flex-end
+        &_inverse
+            justify-content: flex-start
+            .index-articles__inner
+                left: auto
+                right: 0
+
+    &__inner
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        width: 200px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        z-index: 9
+        &_cut
+            z-index: 10
+            overflow: hidden
+            .index-articles__date
+                color: #a2a2a1
+            .index-articles__text
+                color: #644733
+    &__info
+        position: absolute
+        z-index: 10
+        left: 0
+        width: 335px
+        &_inverse
+            left: auto
+            right: 0
+        
+    &__date
+        font-size: 18px
+        line-height: 1.33
+        color: #ffffff
+    &__text
+        font-size: 24px
+        line-height: 1.25
+        color: #ffffff
+
+    &__img
+        width: 270px
+        height: 200px
+        background-color: rgba(0, 0, 0, 0.2)
+    &__button
+        margin-top: 70px
+        margin-left: 108px
+        display: flex
+        justify-content: center
+        width: 242px
+        height: 78px
+        text-decoration: none
+        background: url('../img/svgo/sticker-2.svg') no-repeat 50% 50%
+        span
+            transform: rotate(-3deg)
+            font-family: Madelyn
+            font-size: 45px
+            line-height: 1.89
+            color: #5b4630
+
+.index-reviews
+    box-sizing: border-box
+    padding-top: 200px
+    width: 50%
+    height: 680px
+    &__inner
+        position: relative
+        margin-top: 60px
+        box-sizing: border-box
+        padding: 31px
+        width: 570px
+        height: 350px
+        background-color: #ffffff
+    &__title
+        font-weight: 400
+        font-size: 32px
+        line-height: 0.88
+        color: #644733
+    &__head
+        width: 100%
+        display: flex
+        justify-content: flex-start
+    &__img
+        width: 59px
+        height: 55px
+        background: #aaa
+    &__name
+        margin-top: 3px
+        margin-left: 16px
+        width: 253px
+        height: 48px
+        font-size: 18px
+        line-height: 1.33
+        color: #644733
+    &__refresh
+        margin-left: auto
+        width: 29px
+        height: 29px
+        background: url('../img/svgo/refresh.svg') no-repeat 50% 50%
+    &__text
+        margin-top: 28px
+        font-family: Madelyn
+        font-size: 40px
+        line-height: 1
+        color: #644733
+    &__button
+        position: absolute
+        display: flex
+        justify-content: center
+        right: 16px
+        bottom: -47px
+        padding-top: 7px
+        width: 301px
+        height: 85px
+        text-decoration: none
+        background: url('../img/svgo/sticker.svg') no-repeat 50% 50%
+        span
+            transform: rotate(-3deg)
+            font-family: Madelyn
+            font-size: 45px
+            line-height: 1.89
+            color: #5b4630
+   

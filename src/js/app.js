@@ -1,4 +1,10 @@
-import sayHello from "./lib/sayHello.js";
+import $ from 'jquery';
+import 'owl.carousel';
 
-
-sayHello();
+$('.index-slider__carousel').owlCarousel({
+    loop:true,
+    margin: 0,
+    dots: true,
+    items: 1,
+    dotsClass: 'index-slider__dots'
+})

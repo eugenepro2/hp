@@ -6,15 +6,16 @@ section.index-form
             form.index-form__form#index-form__form
                 input.index-form__input(type="text" placeholder="Имя" required)
                 input.index-form__input(type="text" placeholder="Телефон или электронная почта" required)
-                input.index-form__submit(type="submit")
+                .index-form__submit
+                    input(type="submit")
 
-                .index-form__list
-                    .index-form__item
-                        .index-form__img
-                        .imdex-form__text Придумаем варианты, изменим состав
-                    .index-form__item
-                        .index-form__img
-                        .imdex-form__text Впишемся в бюджет и соберем презентацию
-                    .index-form__item
-                        .index-form__img
-                        .imdex-form__text Предложим скидки, положим запасные подарки
+            .index-form__list
+                .index-form__item
+                    .index-form__img.index-form__img_1
+                    .index-form__text Придумаем варианты, изменим состав
+                .index-form__item
+                    .index-form__img.index-form__img_2
+                    .index-form__text Впишемся в бюджет и соберем презентацию
+                .index-form__item
+                    .index-form__img.index-form__img_3
+                    .index-form__text Предложим скидки, положим запасные подарки

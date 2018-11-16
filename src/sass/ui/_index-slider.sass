@@ -1,12 +1,16 @@
 .index-slider
-    height: 750px
+    height: 685px
+    width: 100%
     &__carousel
-        height: 750px
+        position: relative
+        width: 100%
+        height: 685px
     &__item
         box-sizing: border-box
-        height: 750px
-        padding-top: 150px
-        background: #492b26
+        height: 685px
+        width: 100%
+        padding-top: 75px
+        background: #aaa
     &__title
         font-size: 18px
         line-height: 1.67
@@ -15,13 +19,13 @@
         text-transform: uppercase
     &__subtitle
         margin-top: 134px
+        margin-left: -15px
         font-family: Madelyn
         font-size: 130px
         line-height: 0.88
         color: #f8f5f2
     &__disc
         margin-top: 20px
-        margin-left: 15px
     &__ul
         font-size: 18px
         width: 283px
@@ -30,3 +34,25 @@
         color: #ffffff
     &__li
         margin-bottom: 20px
+    &__dots
+        position: absolute
+        z-index: 10
+        height: 10px
+        left: 50%
+        margin-left: -585px
+        width: 1170px
+        bottom: 42px
+        // change default classes
+        .owl-dot
+            margin-right: 20px
+            width: 10px
+            height: 10px
+            opacity: 0.4
+            border-radius: 5px
+            background-color: #f8f5f2 !important
+        .active
+            width: 10px
+            height: 10px
+            opacity: 1
+            border-radius: 5px
+            background-color: #f8f5f2 !important

@@ -2,7 +2,10 @@
 title: Index Page
 ---
 extends layouts/_layout
+append vars
+  -var headerClass = 'header_bg'
 block content
+  -var hiddenTitle ='hidden'
   include partials/_catalog-tags
   include partials/_catalog-filter
   -var hiddenClass = ''

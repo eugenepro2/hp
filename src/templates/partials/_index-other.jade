@@ -6,28 +6,39 @@ section.index-other
                 h2.index-articles__title Может помочь
 
                 .index-articles__item
-                    .index-articles__info
-                        .index-articles__date 17.08.2018
-                        .index-articles__text Цветы в подарок - богатый мир оттенков и ароматов
+                    .index-articles__inner.index-articles__inner_cut
+                        .index-articles__info
+                            .index-articles__date 17.08.2018
+                            .index-articles__text Цветы в подарок - богатый мир оттенков и ароматов
+                    .index-articles__inner
+                        .index-articles__info
+                            .index-articles__date 17.08.2018
+                            .index-articles__text Цветы в подарок - богатый мир оттенков и ароматов
                     img.index-articles__img(src="#", alt="Цветы в подарок - богатый мир оттенков и ароматов")
 
-                .index-articles__item.index-articles__item_reverse
+                .index-articles__item.index-articles__item_inverse
                     img.index-articles__img(src="#", alt="Цветы в подарок - богатый мир оттенков и ароматов")
-                    .index-articles__info
-                        .index-articles__date 17.08.2018
-                        .index-articles__text Подарки для ценителей виски   
+                    .index-articles__inner.index-articles__inner_cut
+                        .index-articles__info.index-articles__info_inverse
+                            .index-articles__date 17.08.2018
+                            .index-articles__text Подарки для ценителей виски   
+                    .index-articles__inner
+                        .index-articles__info.index-articles__info_inverse
+                            .index-articles__date 17.08.2018
+                            .index-articles__text Подарки для ценителей виски   
 
-                a.index-articles__button(href="#") Все статьи
+                a.index-articles__button(href="#") 
+                    span Все статьи
 
 
             .index-reviews
                 h2.index-reviews__title Отзывы счастливых клиентов
 
-                .index-review-card
-                    .index-review-card__header
-                        .index-review-card__img
-                        .index-review-card__title Отзыв от Сибирской технической компании
-                        .index-review-card__button
-                    .index-review-card__text Подарки получили! Очень рады высокому качеству исполнения заказа. Подарки классные. Спасибо большое Вам за проделанную работу, обязательно вернемся к Вам еще на День Нефтяника…
-
-                a.index-reviews__button(href="#") Все отзывы
+                .index-reviews__inner
+                    .index-reviews__head
+                        .index-reviews__img
+                        .index-reviews__name Отзыв от Сибирской технической компании
+                        .index-reviews__refresh
+                    .index-reviews__text Подарки получили! Очень рады высокому качеству исполнения заказа. Подарки классные. Спасибо большое Вам за проделанную работу, обязательно вернемся к Вам еще на День Нефтяника…
+                    a.index-reviews__button(href="#") 
+                        span Все отзывы

@@ -1,0 +1,90 @@
+.index-cases
+    height: 650px
+    box-sizing: border-box
+    padding-top: 90px
+    &__inner
+        height: 560px
+        position: relative
+    &__title
+        font-weight: 400
+        font-size: 32px
+        line-height: 0.88
+        color: #644733
+    &__list
+        display: flex
+        justify-content: space-between
+        margin-top: 66px
+    &__button
+        position: absolute
+        display: flex
+        justify-content: center
+        right: 0
+        bottom: 0
+        width: 242px
+        height: 78px
+        text-decoration: none
+        background: url('../img/svgo/sticker-2.svg') no-repeat 50% 50%
+        span
+            transform: rotate(-3deg)
+            font-family: Madelyn
+            font-size: 45px
+            line-height: 1.89
+            color: #5b4630
+.index-case
+    position: relative
+    width: 370px
+    height: 224px
+    cursor: pointer
+    &__img
+        width: 370px
+        height: 224px
+        background: #eab8b8
+    &__inner
+        display: none
+        flex-direction: column
+        justify-content: space-between
+        position: absolute
+        box-sizing: border-box
+        padding: 28px
+        bottom: -102px
+        left: 50%
+        margin-left: -165px
+        width: 330px
+        height: 204px
+        background-color: #ffffff
+    &__title
+        font-size: 18px
+        line-height: 1.56
+        color: #5b4630
+    &__text
+        margin-top: 13px
+        font-size: 16px
+        line-height: 1.5
+        color: #a2a2a1
+    &__price
+        margin-top: auto
+        font-size: 18px
+        line-height: 1.56
+        color: #5b4630
+    &__button
+        position: absolute
+        display: flex
+        justify-content: center
+        right: -31px
+        bottom: -47px
+        padding-top: 7px
+        width: 301px
+        height: 85px
+        text-decoration: none
+        background: url('../img/svgo/sticker.svg') no-repeat 50% 50%
+        span
+            transform: rotate(-3deg)
+            font-family: Madelyn
+            font-size: 45px
+            line-height: 1.89
+            color: #5b4630
+    &:nth-child(2n)
+        margin-top: 80px
+    &:hover
+        .index-case__inner
+            display: flex

@@ -1,0 +1,89 @@
+.index-form
+    background-color: #fff
+    position: relative
+    &__inner
+        position: relative
+        display: flex
+        flex-direction: column
+        box-sizing: border-box
+        padding-top: 57px
+        padding-bottom: 58px
+    &__title
+        font-size: 32px
+        line-height: 0.88
+        color: #644733
+    &__desc
+        margin-top: 17px
+        font-size: 18px
+        color: #644733
+    &__form
+        margin-top: 34px
+        box-sizing: border-box
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        width: 675px
+    &__input
+        margin-right: 14px
+        padding-left: 15px
+        box-sizing: border-box
+        width: 330px
+        height: 45px
+        border-radius: 5px
+        font-size: 16px
+        border: solid 1px #f0eae4
+        &:nth-child(2)
+            margin-right: auto
+    &__submit
+        margin-top: 54px
+        display: flex
+        justify-content: center
+        width: 242px
+        height: 78px
+        text-decoration: none
+        background: url('../img/svgo/sticker-2.svg') no-repeat 50% 50%
+        input
+            background: none
+            transform: rotate(-3deg)
+            font-family: Madelyn
+            font-size: 45px
+            line-height: 1.89
+            color: #5b4630
+    &__list
+        position: absolute
+        display: flex
+        width: 870px
+        right: 0
+        bottom: 58px
+        justify-content: flex-end
+        box-sizing: border-box
+    &__item
+        display: flex
+        box-sizing: border-box
+        align-items: center
+        justify-content: flex-start
+        margin-left: 20px
+        height: 62px
+    &__img
+        width: 62px
+        height: 62px
+        &_1
+            background: url('../img/svgo/form-icon1.svg') no-repeat 50% 50%
+        &_2
+            background: url('../img/svgo/form-icon2.svg') no-repeat 50% 50%
+        &_3
+            background: url('../img/svgo/form-icon3.svg') no-repeat 50% 50%
+    &__text
+        margin-left: 15px
+        width: 200px
+    &::before
+        position: absolute
+        content: ''
+        left: 0
+        right: 0
+        top: -195px
+        height: 451px
+        z-index: -1
+        background: url('../img/form-bg.png') no-repeat 50% 0
+        background-size: cover
+

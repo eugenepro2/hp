@@ -9,9 +9,7 @@ function sayHello() {
     ];
     window.console.log.apply(console, args);
   } else if (window.console) {
-    window.console.log(
-      "Made with love ❤️ Riverco.de - http://www.riverco.de/  ❤️"
-    );
+    window.console.log("asd");
   }
 }
 module.exports = sayHello;

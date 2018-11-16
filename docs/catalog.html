@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="css/fonts/fonts.css">
     <link rel="stylesheet" media="all" href="css/app.css">
   </head>
   <body>
     <!--BEGIN out-->
     <div class="out">
       <!--BEGIN header-->
-      <header class="header ">
+      <header class="header header_bg">
         <div class="container">
           <div class="header__inner">
             <div class="header__logo  "></div>
@@ -34,7 +33,7 @@
       <div class="catalog-tags">
         <div class="container">
           <div class="catalog-tags__inner">
-            <div class="catalog-tags__title">А еще у нас есть</div>
+            <div class="catalog-tags__title hidden">А еще у нас есть</div>
             <div class="catalog-tags__list">
               <div class="catalog-tags__button">Печенье с логотипом</div>
               <div class="catalog-tags__button">Алкоголь</div>
@@ -104,7 +103,7 @@
             </div>
             <div class="catalog-filter__price">
               <div class="catalog-filter__name">не дороже</div>
-              <div class="catalog-filter__button">1 500 &#8381; / шт</div>
+              <div class="catalog-filter__button">1 500 <span>&#8381; </span>/шт</div>
               <div class="catalog-filter__menu">
                 <ul class="catalog-filter__menu-ul">
                   <li class="catalog-filter__menu-li catalog-filter__menu-li_active">1 500 &#8381; / шт</li>
@@ -162,7 +161,7 @@
       </section>
       <div class="index-banner">
         <div class="container">
-          <div class="index-banner__inner"><a href="#" class="index-banner__item">Как мы делаем наши <span>подарки</span></a><a href="#" class="index-banner__item">Разработка подарков<span>на заказ</span></a></div>
+          <div class="index-banner__inner"><a href="#" class="index-banner__item"> <span class="index-banner__title">Как мы делаем наши </span><span class="index-banner__subtitle">подарки</span></a><a href="#" class="index-banner__item"> <span class="index-banner__title">Разработка подарков</span><span class="index-banner__subtitle">на заказ</span></a></div>
         </div>
       </div>
       <section class="catalog-cards">
@@ -253,53 +252,59 @@
           <div class="index-form__inner">
             <h2 class="index-form__title">Много всего и не подходит?</h2>
             <div class="index-form__desc">Оставте свой телефон и наш менеджер позаботится обо всем</div>
-            <form id="index-form__form" class="index-form__form"><input type="text" placeholder="Имя" required class="index-form__input"><input type="text" placeholder="Телефон или электронная почта" required class="index-form__input"><input type="submit" class="index-form__submit">
-              <div class="index-form__list">
-                <div class="index-form__item">
-                  <div class="index-form__img"></div>
-                  <div class="imdex-form__text">Придумаем варианты, изменим состав</div>
-                </div>
-                <div class="index-form__item">
-                  <div class="index-form__img"></div>
-                  <div class="imdex-form__text">Впишемся в бюджет и соберем презентацию</div>
-                </div>
-                <div class="index-form__item">
-                  <div class="index-form__img"></div>
-                  <div class="imdex-form__text">Предложим скидки, положим запасные подарки</div>
-                </div>
-              </div>
+            <form id="index-form__form" class="index-form__form"><input type="text" placeholder="Имя" required class="index-form__input"><input type="text" placeholder="Телефон или электронная почта" required class="index-form__input">
+              <div class="index-form__submit"><input type="submit"></div>
             </form>
+            <div class="index-form__list">
+              <div class="index-form__item">
+                <div class="index-form__img index-form__img_1"></div>
+                <div class="index-form__text">Придумаем варианты, изменим состав</div>
+              </div>
+              <div class="index-form__item">
+                <div class="index-form__img index-form__img_2"></div>
+                <div class="index-form__text">Впишемся в бюджет и соберем презентацию</div>
+              </div>
+              <div class="index-form__item">
+                <div class="index-form__img index-form__img_3"></div>
+                <div class="index-form__text">Предложим скидки, положим запасные подарки</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="index-adv">
+      <section class="index-advantages">
         <div class="container">
-          <div class="index-adv__inner">
-            <h2 class="index-adv__title">Необычные подарки для креативных людей</h2>
-            <div class="index-adv__info">
-              <div class="index-adv__text">Однако Л.В.Щерба утверждал, что диахрония дает прозаический подтекст. Очевидно, что метонимия дает литературный абстракционизм. Парономазия, если уловить хореический ритм или аллитерацию на "р", нивелирует ямб. Быличка откровенна. Особую ценность, на наш взгляд, представляет эстетическое воздействие интегрирует диссонансный диалектический характер, именно об этом говорил Б.В.Томашевский в своей работе 1925 года.</div>
-              <div class="index-adv__text">Однако Л.В.Щерба утверждал, что диахрония дает прозаический подтекст. Очевидно, что метонимия дает литературный абстракционизм. Парономазия, если уловить хореический ритм или аллитерацию на "р", нивелирует ямб. Быличка откровенна. Особую ценность, на наш взгляд, представляет эстетическое воздействие интегрирует диссонансный диалектический характер, именно об этом говорил Б.В.Томашевский в своей работе 1925 года.</div>
+          <div class="index-advantages__inner">
+            <h2 class="index-advantages__title">Необычные подарки для креативных людей</h2>
+            <div class="index-advantages__info">
+              <div class="index-advantages__text">Однако Л.В.Щерба утверждал, что диахрония дает прозаический подтекст. Очевидно, что метонимия дает литературный абстракционизм. Парономазия, если уловить хореический ритм или аллитерацию на "р", нивелирует ямб. Быличка откровенна. Особую ценность, на наш взгляд, представляет эстетическое воздействие интегрирует диссонансный диалектический характер, именно об этом говорил Б.В.Томашевский в своей работе 1925 года.</div>
+              <div class="index-advantages__text">Однако Л.В.Щерба утверждал, что диахрония дает прозаический подтекст. Очевидно, что метонимия дает литературный абстракционизм. Парономазия, если уловить хореический ритм или аллитерацию на "р", нивелирует ямб. Быличка откровенна. Особую ценность, на наш взгляд, представляет эстетическое воздействие интегрирует диссонансный диалектический характер, именно об этом говорил Б.В.Томашевский в своей работе 1925 года.</div>
             </div>
-            <div class="index-adv__list">
-              <div class="index-adv__item">
-                <div class="index-adv__img index-adv__img_1"></div>
-                <div class="index-adv__name">Ручная работа</div>
+            <div class="index-advantages__list">
+              <div class="index-advantages__item">
+                <div class="index-advantages__img index-advantages__img_1">
+                  <div class="index-advantages__name">Ручная работа</div>
+                </div>
               </div>
-              <div class="index-adv__item">
-                <div class="index-adv__img index-adv__img_2"></div>
-                <div class="index-adv__name">Собственное производство</div>
+              <div class="index-advantages__item">
+                <div class="index-advantages__img index-advantages__img_2">
+                  <div class="index-advantages__name">Собственное производство</div>
+                </div>
               </div>
-              <div class="index-adv__item">
-                <div class="index-adv__img index-adv__img_3"></div>
-                <div class="index-adv__name">Запасные подарки</div>
+              <div class="index-advantages__item">
+                <div class="index-advantages__img index-advantages__img_3">
+                  <div class="index-advantages__name">Запасные подарки</div>
+                </div>
               </div>
-              <div class="index-adv__item">
-                <div class="index-adv__img index-adv__img_4"></div>
-                <div class="index-adv__name">Надежная доставка по всей России</div>
+              <div class="index-advantages__item">
+                <div class="index-advantages__img index-advantages__img_4">
+                  <div class="index-advantages__name">Надежная доставка <br>по всей России</div>
+                </div>
               </div>
-              <div class="index-adv__item">
-                <div class="index-adv__img index-adv__img_5"></div>
-                <div class="index-adv__name">Персональный менеджер</div>
+              <div class="index-advantages__item">
+                <div class="index-advantages__img index-advantages__img_5">
+                  <div class="index-advantages__name">Персональный <br>менеджер</div>
+                </div>
               </div>
             </div>
           </div>
