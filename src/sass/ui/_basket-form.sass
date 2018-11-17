@@ -1,0 +1,176 @@
+.basket-form
+    &__inner
+        padding-bottom: 150px
+        position: relative
+        display: flex
+        flex-direction: column
+    &__title
+        font-size: 38px
+        line-height: 1.05
+        color: #5b4630
+    &__download
+        position: absolute
+        display: flex
+        align-items: center
+        top: 0
+        right: 0
+        text-decoration: none
+    &__download-img
+        width: 40px
+        height: 44px
+        background: url('../img/svgo/download.svg') no-repeat 50% 50%
+    &__download-text
+        margin-left: 10px
+        width: 175px
+        font-size: 14px
+        line-height: 1.71
+        color: #5b4630
+    &__list
+        margin-top: 42px
+    &__item
+        margin-bottom: 30px
+        position: relative
+        display: flex
+        width: 100%
+        height: 270px
+        border-radius: 5px
+        background-color: #ffffff
+        overflow: hidden
+        &_disable
+            .basket-form__item-title
+                color: #a2a2a1 
+            .basket-form__item-img
+                filter: grayscale(100%)
+            .basket-form__item-price
+                color: #a2a2a1 
+            .basket-form__item-calc
+                span
+                    color: #a2a2a1 
+            .basket-form__item-button
+                top: 29px
+                right: 31px
+                width: 29px
+                height: 29px
+                background: url('../img/svgo/refresh.svg') no-repeat 50% 50%
+    &__item-img
+        width: 270px
+        height: 270px
+    &__item-info
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 26px 40px
+        height: 270px
+        box-sizing: border-box
+    &__item-title
+        width: 729px
+        font-size: 32px
+        line-height: 1.13
+        color: #644733
+    &__item-calc
+        display: flex
+        align-items: center
+        width: 100%
+        span
+            margin: 0 10px
+            font-size: 24px
+            line-height: 1
+            color: #5b4630
+    &__item-price
+        font-size: 24px
+        line-height: 1
+        color: #5b4630
+    &__item-input
+        box-sizing: border-box
+        padding-left: 16px
+        width: 67px
+        height: 46px
+        border-radius: 2px
+        border: 1px solid #f0eae4
+        background-color: #ffffff
+        font-size: 24px
+        line-height: 1
+        color: #5b4630
+    &__item-button
+        position: absolute
+        width: 25px
+        height: 25px
+        top: 30px
+        right: 32px
+        cursor: pointer
+        background: url('../img/svgo/close.svg') no-repeat 50% 50%
+
+    &__form
+        margin-top: 100px 
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__form-text
+        font-size: 20px
+        line-height: 1.4
+        text-align: center
+        color: #a2a2a1
+    &__form-price
+        margin-top: 15px
+        font-size: 40px
+        line-height: 0.8
+        color: #644733
+    &__form-props
+        margin-top: 60px
+        display: flex
+        align-items: center
+    &__form-checkbox
+        position: relative
+        padding-left: 29px
+        margin-right: 40px
+        height: 30px
+        display: flex
+        cursor: pointer
+        z-index: 10
+        span
+            font-size: 16px
+            line-height: 1.88
+            color: #644733
+    &__form-img
+        position: absolute
+        content: ''
+        display: block
+        top: 4px
+        left: 0
+        width: 21px
+        height: 21px
+        border-radius: 2px
+        background-color: #ffffff
+    input:checked
+        + .basket-form__form-img
+            background: url('../img/svgo/select.svg') no-repeat 50% 50%
+            background-color: #f6773e
+                
+                
+    &__form-textarea
+        box-sizing: border-box
+        padding-top: 12px
+        padding-left: 18px
+        margin-top: 25px
+        width: 627px
+        height: 159px
+        border-radius: 5px
+        background-color: #ffffff
+        border: none
+        font-size: 16px
+        color: #b3b3b3
+    &__form-submit
+        margin-top: 60px
+        display: flex
+        justify-content: center
+        width: 242px
+        height: 78px
+        text-decoration: none
+        background: url('../img/svgo/sticker-orange.svg') no-repeat 50% 50%
+        input
+            background: none
+            transform: rotate(-3deg)
+            font-family: Madelyn
+            font-size: 45px
+            line-height: 1.89
+            color: #ffffff

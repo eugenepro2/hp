@@ -1,11 +1,14 @@
 section.basket-form
     .container
         .basket-form__inner
-            h2.basket-form__title
+            .basket-form__title Корзина
+            a.basket-form__download(href="#")
+                .basket-form__download-img
+                .basket-form__download-text Скачать в виде презентации
             .basket-form__list
             
                 .basket-form__item
-                    img.basket-form__item-img(src="#", alt="Набор с подставкой, книгой и пробковой доской с веселыми кнопками")
+                    img.basket-form__item-img(src="https://via.placeholder.com/270x270/64b6b7/ffffff", alt="Набор с подставкой, книгой и пробковой доской с веселыми кнопками")
                     .basket-form__item-info
                         .basket-form__item-title Набор с подставкой, книгой и пробковой доской с веселыми кнопками
                         .basket-form__item-calc
@@ -16,7 +19,7 @@ section.basket-form
                     .basket-form__item-button
             
                 .basket-form__item
-                    img.basket-form__item-img(src="#", alt="Набор с подставкой, книгой и пробковой доской с веселыми кнопками")
+                    img.basket-form__item-img(src="https://via.placeholder.com/270x270/64b6b7/ffffff", alt="Набор с подставкой, книгой и пробковой доской с веселыми кнопками")
                     .basket-form__item-info
                         .basket-form__item-title Набор с подставкой, книгой и пробковой доской с веселыми кнопками
                         .basket-form__item-calc
@@ -27,7 +30,7 @@ section.basket-form
                     .basket-form__item-button
             
                 .basket-form__item.basket-form__item_disable
-                    img.basket-form__item-img(src="#", alt="Набор с подставкой, книгой и пробковой доской с веселыми кнопками")
+                    img.basket-form__item-img(src="https://via.placeholder.com/270x270/64b6b7/ffffff", alt="Набор с подставкой, книгой и пробковой доской с веселыми кнопками")
                     .basket-form__item-info
                         .basket-form__item-title Набор с подставкой, книгой и пробковой доской с веселыми кнопками
                         .basket-form__item-calc
@@ -41,10 +44,13 @@ section.basket-form
                 .basket-form__form-price 746 600 &#8381;
                 .basket-form__form-props 
                     label.basket-form__form-checkbox(for="basket-form__form-logo")
-                        input(type="checkbox" id="basket-form__form-logo")  
+                        input(type="checkbox" id="basket-form__form-logo" hidden)  
+                        .basket-form__form-img
                         span Нанести логотип
                     label.basket-form__form-checkbox(for="basket-form__form-comp")
-                        input(type="checkbox" id="basket-form__form-comp") 
+                        input(type="checkbox" id="basket-form__form-comp" hidden) 
+                        .basket-form__form-img
                         span Изменить состав подарка
-                    textarea.basket-form__form-textarea(name="basket-form__form-textarea", cols="30", rows="10")
-                    input.basket-form__form-submit(type="submit")
+                textarea.basket-form__form-textarea(name="basket-form__form-textarea", cols="30", rows="10")
+                .basket-form__form-submit
+                    input(type="submit" value="Оформить")

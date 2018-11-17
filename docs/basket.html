@@ -34,9 +34,9 @@
         <div class="container">
           <div class="breadcrumbs__inner">
             <ul class="breadcrumbs__ul">
-              <li class="breadcrumbs__li"><a class="breadcrumbs__link">Подарки для сталеваров</a></li>
+              <li class="breadcrumbs__li"><a href="#" class="breadcrumbs__link">Подарки для сталеваров</a></li>
               <li class="breadcrumbs__li">&#8226;</li>
-              <li class="breadcrumbs__li"><a class="breadcrumbs__link">Подставка для ноутбуков lapleg</a></li>
+              <li class="breadcrumbs__li"><a href="#" class="breadcrumbs__link">Подставка для ноутбуков lapleg</a></li>
             </ul>
           </div>
         </div>
@@ -44,9 +44,12 @@
       <section class="basket-form">
         <div class="container">
           <div class="basket-form__inner">
-            <h2 class="basket-form__title"></h2>
+            <div class="basket-form__title">Корзина</div><a href="#" class="basket-form__download">
+              <div class="basket-form__download-img"></div>
+              <div class="basket-form__download-text">Скачать в виде презентации</div>
+            </a>
             <div class="basket-form__list">
-              <div class="basket-form__item"><img src="#" alt="Набор с подставкой, книгой и пробковой доской с веселыми кнопками" class="basket-form__item-img">
+              <div class="basket-form__item"><img src="https://via.placeholder.com/270x270/64b6b7/ffffff" alt="Набор с подставкой, книгой и пробковой доской с веселыми кнопками" class="basket-form__item-img">
                 <div class="basket-form__item-info">
                   <div class="basket-form__item-title">Набор с подставкой, книгой и пробковой доской с веселыми кнопками</div>
                   <div class="basket-form__item-calc">
@@ -55,7 +58,7 @@
                 </div>
                 <div class="basket-form__item-button"></div>
               </div>
-              <div class="basket-form__item"><img src="#" alt="Набор с подставкой, книгой и пробковой доской с веселыми кнопками" class="basket-form__item-img">
+              <div class="basket-form__item"><img src="https://via.placeholder.com/270x270/64b6b7/ffffff" alt="Набор с подставкой, книгой и пробковой доской с веселыми кнопками" class="basket-form__item-img">
                 <div class="basket-form__item-info">
                   <div class="basket-form__item-title">Набор с подставкой, книгой и пробковой доской с веселыми кнопками</div>
                   <div class="basket-form__item-calc">
@@ -64,7 +67,7 @@
                 </div>
                 <div class="basket-form__item-button"></div>
               </div>
-              <div class="basket-form__item basket-form__item_disable"><img src="#" alt="Набор с подставкой, книгой и пробковой доской с веселыми кнопками" class="basket-form__item-img">
+              <div class="basket-form__item basket-form__item_disable"><img src="https://via.placeholder.com/270x270/64b6b7/ffffff" alt="Набор с подставкой, книгой и пробковой доской с веселыми кнопками" class="basket-form__item-img">
                 <div class="basket-form__item-info">
                   <div class="basket-form__item-title">Набор с подставкой, книгой и пробковой доской с веселыми кнопками</div>
                   <div class="basket-form__item-calc">
@@ -77,7 +80,12 @@
             <form class="basket-form__form">
               <div class="basket-form__form-text">Итого </div>
               <div class="basket-form__form-price">746 600 &#8381;</div>
-              <div class="basket-form__form-props"> <label for="basket-form__form-logo" class="basket-form__form-checkbox"><input type="checkbox" id="basket-form__form-logo"><span>Нанести логотип</span></label><label for="basket-form__form-comp" class="basket-form__form-checkbox"><input type="checkbox" id="basket-form__form-comp"><span>Изменить состав подарка</span></label><textarea name="basket-form__form-textarea" cols="30" rows="10" class="basket-form__form-textarea"></textarea><input type="submit" class="basket-form__form-submit"></div>
+              <div class="basket-form__form-props"> <label for="basket-form__form-logo" class="basket-form__form-checkbox"><input type="checkbox" id="basket-form__form-logo" hidden>
+                  <div class="basket-form__form-img"></div><span>Нанести логотип</span>
+                </label><label for="basket-form__form-comp" class="basket-form__form-checkbox"><input type="checkbox" id="basket-form__form-comp" hidden>
+                  <div class="basket-form__form-img"></div><span>Изменить состав подарка</span>
+                </label></div><textarea name="basket-form__form-textarea" cols="30" rows="10" class="basket-form__form-textarea"></textarea>
+              <div class="basket-form__form-submit"><input type="submit" value="Оформить"></div>
             </form>
           </div>
         </div>

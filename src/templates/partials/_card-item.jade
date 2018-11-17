@@ -1,4 +1,4 @@
-section.card-item
+.card-item
     .container
         .card-item__inner
             .card-item__head
@@ -8,52 +8,54 @@ section.card-item
                     .card-item__favs-img
                     .card-item__favs-text Добавить в презентацию
             .card-item__info
-                .card-item__img
-                    img.card-item__img-main(src="#", alt="Путешествие к центру земли")
-                    .card-item__img-control
-                        .card-item__img-mini.card-item__img-mini_active(data-card-img="#")
-                        .card-item__img-mini(data-card-img="#")
-                        .card-item__img-mini(data-card-img="#")
-                .card-item__props
-                    .card-item__props-conditions
-                        .card-item__props-item
+                .card-item-img
+                    img.card-item-img__main(src="https://via.placeholder.com/490x490?text=test+1", alt="Путешествие к центру земли")
+                    .card-item-img__control
+                        .card-item-img__mini.card-item-img__mini_active(data-card-img="https://via.placeholder.com/490x490?text=test+1")
+                        .card-item-img__mini(data-card-img="https://via.placeholder.com/490x490?text=test+2")
+                        .card-item-img__mini(data-card-img="https://via.placeholder.com/490x490?text=test+3")
+                form.card-item-props
+                    .card-item-props__conditions
+                        .card-item-props__item
                             span от 10 шт.
                             span 1 000 &#8381; 
-                        .card-item__props-item
+                        .card-item-props__item
                             span от 10 шт.
                             span 1 000 &#8381; 
-                        .card-item__props-item
+                        .card-item-props__item
                             span от 10 шт.
                             span 1 000 &#8381; 
-                        .card-item__props-item
+                        .card-item-props__item
                             span от 10 шт.
                             span 1 000 &#8381; 
-                    .card-item__props-col
-                        .card-item__props-calc
-                            .card-item__props-price 746 600 &#8381;
+                    .card-item-props__col
+                        .card-item-props__calc
+                            .card-item-props__price 746 600 &#8381;
                             span за
-                            input.card-item__props-input(type="text")
+                            input.card-item-props__input(type="text")
                             span шт.
-                        .card-item__props-details
+                        .card-item-props__details
                             ul
                                 li Делаем на заказ за 12-14 дней
                                 li Изменим комплект
                                 li Нанесем логотип
-                    .card-item__props-col
-                        a.card-item__props-button(href="#") в Корзину
-                        a.card-item__gift(href="#")
-                            .card-item__gift-img
-                            .card-item__gift-text Этот подарок для физических лиц  в магазине HappyFriend
-            .card-item__tabs
-                .card-item__tabs-header
-                    .card-item__tabs-button.card-item__tabs-button_active Описание
-                    .card-item__tabs-button Состав
-                    .card-item__tabs-button Брендирование
-                    .card-item__tabs-button Гарантии
-                .card-item__tabs-body
-                    .card-item__tabs-info.card-item__tabs-info_active
-                        .card-item__tabs-text Однако Л.В.Щерба утверждал, что диахрония дает прозаический подтекст. Очевидно, что метонимия дает литературный абстракционизм. Парономазия, если уловить хореический ритм или аллитерацию на "р", нивелирует ямб. Быличка откровенна. Особую ценность, на наш взгляд, представляет эстетическое воздействие интегрирует диссонансный диалектический характер, именно об этом говорил Б.В.Томашевский в своей работе 1925 года.
-                        .card-item__tabs-text Однако Л.В.Щерба утверждал, что диахрония дает прозаический подтекст. Очевидно, что метонимия дает литературный абстракционизм. Парономазия, если уловить хореический ритм или аллитерацию на "р", нивелирует ямб. Быличка откровенна. Особую ценность, на наш взгляд, представляет эстетическое воздействие интегрирует диссонансный диалектический характер, именно об этом говорил Б.В.Томашевский в своей работе 1925 года.
-                    .card-item__tabs-info  
-                    .card-item__tabs-info  
-                    .card-item__tabs-info  
+                    .card-item-props__col
+                        .card-item-props__button
+                            input(type="submit" value="в Корзину") 
+                        
+                        a.card-item-props__gift(href="#")
+                            .card-item-props__gift-img
+                            .card-item-props__gift-text Этот подарок для физических лиц в магазине HappyFriend
+            .card-item-tabs
+                .card-item-tabs__head
+                    .card-item-tabs__button.card-item-tabs__button_active Описание
+                    .card-item-tabs__button Состав
+                    .card-item-tabs__button Брендирование
+                    .card-item-tabs__button Гарантии
+                .card-item-tabs__body
+                    .card-item-tabs__info.card-item-tabs__info_active
+                        .card-item-tabs__text Однако Л.В.Щерба утверждал, что диахрония дает прозаический подтекст. Очевидно, что метонимия дает литературный абстракционизм. Парономазия, если уловить хореический ритм или аллитерацию на "р", нивелирует ямб. Быличка откровенна. Особую ценность, на наш взгляд, представляет эстетическое воздействие интегрирует диссонансный диалектический характер, именно об этом говорил Б.В.Томашевский в своей работе 1925 года.
+                        .card-item-tabs__text Однако Л.В.Щерба утверждал, что диахрония дает прозаический подтекст. Очевидно, что метонимия дает литературный абстракционизм. Парономазия, если уловить хореический ритм или аллитерацию на "р", нивелирует ямб. Быличка откровенна. Особую ценность, на наш взгляд, представляет эстетическое воздействие интегрирует диссонансный диалектический характер, именно об этом говорил Б.В.Томашевский в своей работе 1925 года.
+                    .card-item-tabs__info  
+                    .card-item-tabs__info  
+                    .card-item-tabs__info  
