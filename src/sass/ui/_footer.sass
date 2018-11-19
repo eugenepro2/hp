@@ -7,13 +7,14 @@
         flex-wrap: wrap
         justify-content: space-between
         box-sizing: border-box
-        padding-top: 42px
+        padding-top: 45px
         padding-bottom: 78px
     &__head
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
         align-items: flex-end
-        max-width: 655px
+        max-width: 665px
         width: 100%
     &__logo
         width: 240px
@@ -23,9 +24,10 @@
         &_dark
             background: url('../img/logo-dark.png') no-repeat 50% 50%
     &__social-list
+        width: 212px
         display: flex
+        justify-content: space-between
     &__social-icon
-        margin-right: 13px
         display: flex
         width: 32px
         height: 32px
@@ -55,14 +57,14 @@
         display: flex
         width: 100%
     &__lists
-        margin-right: 60px
+        margin-right: 70px
         display: flex
         flex-direction: column
         flex-wrap: wrap
         box-sizing: border-box
         justify-content: space-between
         align-content: space-between
-        height: 334px
+        height: 322px
         width: 370px
     &__list
         width: 170px
@@ -74,13 +76,15 @@
         color: #644733
     &__ul
         margin-top: 10px
+        &_address
+            margin-top: 14px
     &__li 
         display: block
         font-size: 16px
         line-height: 1.25
         text-decoration: none
         color: #a2a2a1
-        margin-bottom: 5px
+        margin-bottom: 4px
         &_address
             margin-bottom: 8px
     &__address
@@ -89,8 +93,8 @@
         box-sizing: border-box
         justify-content: space-between
         align-content: space-between
-        height: 334px
-        width: 570px
+        height: 318px
+        width: 486px
     &__search
         position: relative
     &__search-input
@@ -118,8 +122,8 @@
         cursor: pointer
     &__gift
         position: absolute
-        right: 0
-        top: 36px
+        right: 26px
+        top: 40px
         text-decoration: none
     &__gift-img
         width: 143px
@@ -127,6 +131,7 @@
         background: url('https://via.placeholder.com/143x61.png') no-repeat 50% 50%
     &__gift-text
         margin-top: 30px
+        margin-left: 13px
         font-size: 16px
         line-height: 1.25
         color: #a2a2a1
@@ -137,3 +142,113 @@
         font-size: 16px
         line-height: 1.25
         color: #a2a2a1
+    &__accordion
+        display: none
+        margin-top: 45px
+        width: 240px
+
+
+
+@media (max-width: 1024px)
+    .footer
+        &__inner
+            padding-top: 60px
+            padding-bottom: 35px
+        &__head
+            max-width: 568px
+            width: 70%
+        &__body
+            margin-top: 34px
+        &__lists
+            margin-right: 0
+            height: 271px
+            width: 341px
+        &__list
+            width: 170px
+            &_address
+                width: 200px
+        &__list-title
+            font-size: 16px
+        &__li
+            font-size: 14px
+            margin-bottom: 3px
+            &_address
+                margin-bottom: 7px
+        &__address
+            height: 267px
+            width: 456px
+        &__gift
+            right: 65px
+            top: 50px
+        &__gift-text
+            margin-top: 4px
+            font-size: 14px
+        &__copyright
+            font-size: 14px
+
+@media (max-width: 768px)
+    .footer
+        &__inner
+            margin: 0 auto
+            max-width: 528px
+        &__head
+            max-width: 514px
+            width: 100%
+        &__body
+            flex-direction: column
+            margin-top: 38px
+        &__lists
+            height: 320px
+            max-width: 447px
+            width: 100%
+            margin-right: 0
+        &__list
+            width: 161px
+            &_address
+                max-width: 231px
+                width: 48%
+        &__list-title
+            font-size: 18px
+        &__li
+            font-size: 16px
+            margin-bottom: 4px
+            &_address
+                margin-bottom: 9px
+        &__address
+            margin-top: 36px
+            height: auto
+            max-width: 518px
+            width: 100%
+        &__search
+            margin-top: 38px
+            width: 100%
+        &__search-input
+            width: 100%
+        &__gift
+            position: static
+            margin-top: 42px
+        &__gift-text
+            margin-left: 13px
+@media (max-width: 320px)
+    .footer
+        &__inner
+            padding: 35px 30px 70px
+            align-items: center
+            flex-direction: column
+        &__head
+            flex-direction: column
+            align-items: center
+        &__social-list
+            margin-top: 27px
+        &__body
+            display: none
+        &__accordion
+            display: block
+        &__search
+            width: 240px
+            margin-top: 19px
+        &__gift
+            margin-top: 84px
+        &__copyright
+            padding: 18px 10px
+            font-size: 14px

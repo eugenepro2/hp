@@ -3,12 +3,13 @@
     height: 76px
     background-color: #ffffff
     color: #644733
-    border: solid 1px #f0eae4
+    border-bottom: solid 1px #f0eae4
     a
         color: #644733 
     &__inner
         display: flex
         align-items: center
+        height: 76px
         padding: 17px 0
         box-sizing: border-box
     &__logo
@@ -18,6 +19,8 @@
         background-size: contain
         &_dark
             background: url('../img/logo-dark.png') no-repeat 50% 50%
+            background-size: contain
+            
     &__links
         margin-left: 60px
         display: flex
@@ -49,11 +52,11 @@
         letter-spacing: 0.6px
         font-weight: 300
     &__contacts
-        margin-left: 137px
+        margin-left: auto
         display: flex
         flex-direction: column
         justify-content: space-between
-        height: 40px
+        // height: 40px
     &__phone
         opacity: 0.7
         font-size: 18px
@@ -81,11 +84,17 @@
         font-size: 17px
         font-weight: 300
         line-height: 1.06
-        
+    &__burger
+        margin-left: 46px
+        display: none
+        width: 26px
+        height: 16px
+        cursor: pointer
+        background: url('../img/burger.svg') no-repeat 50% 100%
     &_dark
         background-color: #492b26
         color: #f8f5f2
-        
+        border-bottom: none
         a
             color: #f8f5f2
     &_bg
@@ -100,3 +109,49 @@
             background: url('../img/header-bg.png') no-repeat 50% 100%
             background-size: cover
         
+@media (max-width: 1024px)
+    .header
+        &__inner
+            justify-content: space-between
+        &__logo
+            margin-left: 10px
+        &__links
+            margin-left: 28px
+        &__contacts
+            margin-left: auto
+        &__gift
+            margin-left: 44px
+        &__gift-text
+            display: none
+@media (max-width: 839px)
+    .header
+        &__logo
+            margin-left: 10px
+        &__links
+            margin-left: 10px
+        &__schedule
+            margin-left: 7px
+        &__contacts
+            margin-left: auto
+        &__gift
+            margin-left: 15px
+@media (max-width: 768px)
+    .header
+        &__logo
+            width: 182px
+            height: 30px
+        &__links
+            display: none
+        &__schedule
+            display: none
+        &__mail
+            display: none
+        &__gift
+            display: none
+        &__burger
+            display: block
+
+@media (max-width: 320px)
+    .header
+        &__contacts
+            display: none

@@ -1,15 +1,24 @@
-.index-cards
-    display: flex
-    width: 100%
+.index-cards 
+    &__inner
+        display: flex
+        width: 100%
     &__item
+        position: relative
         padding-top: 274px
         box-sizing: border-box
         display: flex
         justify-content: center
         width: 50%
         height: 550px
-        background: #91d5ea
-    &__inner
+    &__img
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: url('https://via.placeholder.com/960x550.png') no-repeat 50% 50%
+        background-size: cover
+    &__body
         padding: 12px 20px
         box-sizing: border-box
         position: relative
@@ -18,6 +27,7 @@
         width: 368px
         height: 179px
         background-color: #492b26
+        z-index: 10
     &__name
         font-size: 18px
         line-height: 1.56
@@ -28,8 +38,6 @@
         font-size: 12px
         line-height: 1.42
         color: #917f7c
-    &__ul
-    &__li
     &__price
         height: 28px
         font-size: 16px
@@ -52,3 +60,47 @@
             font-size: 45px
             line-height: 1.89
             color: #5b4630
+    &__carousel
+        display: none
+        height: 569px
+
+
+@media (max-width: 1024px)
+    .index-cards
+
+
+@media (max-width: 768px)
+    .index-cards
+        &__item
+            padding-top: 0
+            flex-direction: column
+            justify-content: flex-start
+            height: 528px
+            &:nth-child(2)
+                .index-cards__inner
+                    background-color: #3d2824
+        &__img
+            position: static
+            width: 100%
+            height: 272px
+        &__body
+            width: 100%
+            height: 256px
+        &__button
+            right: 16px
+            bottom: 21px
+@media (max-width: 320px)
+    .index-cards
+        &__inner
+            display: none
+        &__carousel
+            display: block
+        &__item
+            box-sizing: border-box
+            padding: 10px
+            width: 100%
+        &__img
+            height: 200px
+        &__body
+            height: 266px
+

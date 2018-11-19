@@ -1,16 +1,22 @@
 .index-slider
-    height: 685px
+    height: 675px
     width: 100%
     &__carousel
         position: relative
         width: 100%
-        height: 685px
+        height: 675px
     &__item
         box-sizing: border-box
-        height: 685px
+        height: 675px
         width: 100%
         padding-top: 75px
-        background: #aaa
+        background: url('https://via.placeholder.com/1920x675/44d7d8') no-repeat 50% 50%
+        background-size: cover
+    &__item-inner
+        padding: 0 15px
+        margin: 0 auto
+        max-width: 1200px
+        width: 100%
     &__title
         font-size: 18px
         line-height: 1.67
@@ -24,35 +30,101 @@
         font-size: 130px
         line-height: 0.88
         color: #f8f5f2
-    &__disc
+    &__desc
         margin-top: 20px
-    &__ul
         font-size: 18px
-        width: 283px
-        font-weight: 300
         line-height: 1.33
+        width: 283px
+    &__ul    
+        font-weight: 300    
         color: #ffffff
     &__li
-        margin-bottom: 20px
+        margin-bottom: 14px
     &__dots
         position: absolute
         z-index: 10
         height: 10px
         left: 50%
+        bottom: 50px
         margin-left: -585px
-        width: 1170px
-        bottom: 42px
+        max-width: 1170px
+        width: 100% 
         // change default classes
-        .owl-dot
-            margin-right: 20px
-            width: 10px
-            height: 10px
-            opacity: 0.4
-            border-radius: 5px
-            background-color: #f8f5f2 !important
-        .active
-            width: 10px
-            height: 10px
-            opacity: 1
-            border-radius: 5px
-            background-color: #f8f5f2 !important
+.owl-dot
+    margin-right: 20px
+    width: 10px
+    height: 10px
+    opacity: 0.4
+    border-radius: 5px
+    background-color: #f8f5f2 !important
+.active
+    width: 10px
+    height: 10px
+    opacity: 1
+    border-radius: 5px
+    background-color: #f8f5f2 !important
+
+@media (max-width: 1024px)
+    .index-slider
+        &__item-inner
+            width: 897px
+            
+        &__dots
+            width: 867px
+            margin-left: -434px
+@media (max-width: 768px)
+    .index-slider
+        height: 480px
+        &__carousel
+            height: 480px
+        &__item
+            padding-top: 55px
+            height: 480px
+        &__item-inner
+            width: 768px
+        &__title
+            font-size: 16px
+            line-height: 1.88
+            letter-spacing: 1.2px
+        &__subtitle
+            margin-top: 60px
+            font-size: 80px
+            line-height: 1.44
+            letter-spacing: normal
+        &__desc
+            margin-top: 0
+            font-size: 16px
+        &__dots
+            width: 738px
+            margin-left: -364px
+@media (max-width: 320px)
+    .index-slider
+        height: 240px
+        &__carousel
+            height: 240px
+        &__item-inner
+            width: 320px
+            padding: 0 15px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__item
+            text-align: center
+            padding-top: 19px
+            height: 240px
+        &__title
+            font-size: 11px
+            font-weight: bold
+            line-height: 2.73
+            letter-spacing: 0.8px
+        &__subtitle
+            margin-top: 4px
+            font-size: 45px
+            line-height: 0.89
+        &__desc
+            width: 170px
+            margin-top: 7px
+            font-size: 12px
+            line-height: 1.25
+        &__li
+            margin-bottom: 6px

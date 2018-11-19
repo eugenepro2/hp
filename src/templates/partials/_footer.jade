@@ -9,7 +9,7 @@ footer.footer
                     a.footer__social-icon.footer__social-icon_fb(href="#")
                     a.footer__social-icon.footer__social-icon_ok(href="#")
                     a.footer__social-icon.footer__social-icon_tw(href="#")
-            a.footer__gift(href="#")
+            a.footer__gift.hidden-768(href="#")
                     .footer__gift-img
                     .footer__gift-text Подарки в розницу
             .footer__body
@@ -69,7 +69,7 @@ footer.footer
                 .footer__address 
                     .footer__list.footer__list_address
                         .footer__list-title Санкт-Петербург
-                        ul.footer__ul
+                        ul.footer__ul.footer__ul_address
                             li.footer__li.footer__li_address +7 (812) 648-21-86
                             li.footer__li.footer__li_address +7 (800) 333-12-86 - бесплатно
                             li.footer__li.footer__li_address 194044, ул. Гельсингфорсская, 3, лестница 8, 5 этаж.
@@ -82,7 +82,7 @@ footer.footer
                             li.footer__li.footer__li_address Пн. – Пт.: 9:00 – 18:00
                     .footer__list.footer__list_address
                         .footer__list-title Москва
-                        ul.footer__ul
+                        ul.footer__ul.footer__ul_address
                             li.footer__li.footer__li_address +7 (495) 215-11-34
                             li.footer__li.footer__li_address +7 (800) 333-12-86 - бесплатно
                             li.footer__li.footer__li_address 107140, ул. Верхняя Красносельская, д.2., 3 этаж.
@@ -93,10 +93,117 @@ footer.footer
                                 br
                                 | +7 (499) 503-06-42
                             li.footer__li.footer__li_address Пн. – Пт. 9:00 – 19:00
-                    label.footer__search(for="")
+                    label.footer__search.hidden-768(for="footer__search")
                         span.footer__search-icon
-                        input.footer__search-input(type="text" placeholder="Поиск по сайту")
-            
+                        input.footer__search-input(id="footer__search" type="text" placeholder="Поиск по сайту")
+            .footer__accordion
+                .accordion
+                    .accordion__inner
+                        .accordion__item
+                            .accordion__head 
+                                .accortion__title Наши подарки
+                                .accordion__button
+                            .accordion__body
+                                ul.footer__ul
+                                    li
+                                        a.footer__li(href="#") Разработка подарков
+                                    li
+                                        a.footer__li(href="#") Для партнеров
+                                    li
+                                        a.footer__li(href="#") Из дерева
+                                    li
+                                        a.footer__li(href="#") Из ткани
+                                    li
+                                        a.footer__li(href="#") Из фетра
+                                    li
+                                        a.footer__li(href="#") Печенье с логотипом
+                                    li
+                                        a.footer__li(href="#")  На новый год
+                                    li
+                                        a.footer__li(href="#") Детям в новый год
+                                    li
+                                        a.footer__li(href="#") Слово пасечника
+                                    li
+                                        a.footer__li(href="#") Эусклюзивные
+                                    li
+                                        a.footer__li(href="#") Чай в подарок
+                                    li
+                                        a.footer__li(href="#") Кофе в поарок
+                                        
+                        .accordion__item
+                            .accordion__head 
+                                .accortion__title Как мы работаем
+                                .accordion__button
+                            .accordion__body 
+                                ul.footer__ul
+                                    li
+                                        a.footer__li(href="#") О компании
+                                    li
+                                        a.footer__li(href="#") Доставка и оплата
+                                    li
+                                        a.footer__li(href="#") Отзывы
+                                    li
+                                        a.footer__li(href="#") Контакты
+                                    li
+                                        a.footer__li(href="#") Новости и статьи
+                                    li
+                                        a.footer__li(href="#") Вакансии
+                                        
+                        .accordion__item
+                            .accordion__head 
+                                .accortion__title Сотрудничество
+                                .accordion__button
+                            .accordion__body 
+                                ul.footer__ul
+                                    li
+                                        a.footer__li(href="#") Стать дилером
+                                    li
+                                        a.footer__li(href="#") Поставщикам
+                                    li
+                                        a.footer__li(href="#") Рекламным агентствам
+                                        
+                        .accordion__item
+                            .accordion__head 
+                                .accortion__title Санкт-Петербург
+                                .accordion__button
+                            .accordion__body 
+                                ul.footer__ul.footer__ul_address
+                                    li.footer__li.footer__li_address +7 (812) 648-21-86
+                                    li.footer__li.footer__li_address +7 (800) 333-12-86 - бесплатно
+                                    li.footer__li.footer__li_address 194044, ул. Гельсингфорсская, 3, лестница 8, 5 этаж.
+                                        br
+                                        | На территории завода 
+                                        br  
+                                        | «Красная нить». 
+                                        br
+                                        | Ст. м. Выборгская.
+                                    li.footer__li.footer__li_address Пн. – Пт.: 9:00 – 18:00
+                                
+                                        
+                        .accordion__item
+                            .accordion__head 
+                                .accortion__title Москва
+                                .accordion__button
+                            .accordion__body 
+                                ul.footer__ul.footer__ul_address
+                                    li.footer__li.footer__li_address +7 (495) 215-11-34
+                                    li.footer__li.footer__li_address +7 (800) 333-12-86 - бесплатно
+                                    li.footer__li.footer__li_address 107140, ул. Верхняя Красносельская, д.2., 3 этаж.
+                                        br 
+                                        | Ст. м. "Красносельская". 
+                                        br
+                                        | Для связи на месте 
+                                        br
+                                        | +7 (499) 503-06-42
+                                    li.footer__li.footer__li_address Пн. – Пт. 9:00 – 19:00
+                                        
+            label.footer__search.hidden.visible-768(for="footer__search")
+                    span.footer__search-icon
+                    input.footer__search-input(id="footer__search" type="text" placeholder="Поиск по сайту")
+            a.footer__gift.hidden.visible-768(href="#")
+                .footer__gift-img
+                .footer__gift-text Подарки в розницу
+
     .footer__copyright 
         .container &copy; 2010-2018 	&#8226; Все права защищены 	&#8226; Happy Partner. Авторские корпоративные подарки собственного производства. 
             br 

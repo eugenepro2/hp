@@ -1,0 +1,200 @@
+.order-form
+    &__inner
+    &__title
+        font-size: 38px
+        line-height: 1.05
+        color: #5b4630
+    &__form
+        margin-top: 77px
+    &__text
+        font-size: 28px
+        line-height: 0.86
+        color: #5b4630
+    &__props
+        margin-top: 40px
+        display: flex
+    &__props-label
+        margin-right: 48px
+        margin-bottom: 25px
+        display: flex
+        align-items: center
+        cursor: pointer
+        span
+            font-size: 20px
+            line-height: 1.5
+            color: #644733
+        input:checked
+            ~ span
+                color: #f67800
+            + .order-form__props-img
+                background: #f67800
+                border: none
+    &__props-img
+        box-sizing: border-box
+        position: relative
+        margin-right: 14px
+        width: 40px
+        height: 40px
+        background: #ffffff
+        border-radius: 50%
+        border: 1px solid #f0eae4
+        &::after
+            position: relative
+            content: ''
+            display: block
+            top: 50%
+            left: 50%
+            margin-top: -8px
+            margin-left: -8px
+            width: 16px
+            height: 16px
+            border-radius: 50%
+            background-color: #ffffff
+
+    &__accordion
+        margin-top: 55px
+        border-radius: 5px
+        background-color: #ffffff
+    &__pickup
+        width: 306px
+        font-size: 16px
+        line-height: 1.75
+        color: #644733
+.order-form-accordion
+    &__item
+        padding: 35px 40px
+        border-bottom: 1px solid #f0eae4
+        &:last-child
+            border-bottom: none
+        &_active
+            .order-form-accordion__body
+                display: flex  
+            .order-form-accordion__edit
+                display: none
+
+    &__head
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__title
+        font-size: 28px
+        line-height: 0.86
+        color: #644733
+        span
+            font-family: Madelyn
+            font-size: 80px
+            line-height: 1.06
+            color: #5b4630
+    &__edit
+        font-size: 18px
+        line-height: 1.67
+        color: #f67800
+        cursor: pointer
+    &__body
+        display: flex
+        flex-direction: column
+        
+        padding: 25px 120px 50px 0
+        &_total
+            padding-right: 0
+    &__body-inner
+        display: flex
+        justify-content: space-between
+        width: 100%
+
+    &__col
+        display: flex
+        flex-direction: column
+        margin-right: 30px
+        &_total
+            width: 300px
+            margin-left: auto
+    &__row
+        display: flex
+        justify-content: space-between
+        width: 100%
+    &__text
+        margin-bottom: 9px
+        font-size: 18px
+        line-height: 1.67
+        color: #644733
+    &__input
+        margin-bottom: 12px
+        box-sizing: border-box
+        padding-left: 17px
+        width: 569px
+        height: 46px
+        border-radius: 4px
+        border: 1px solid #f0eae4
+        font-size: 16px
+        line-height: 1.88
+        &::placeholder
+            color: #b3b3b3
+        &_mini 
+            width: 279px
+        &_total 
+            width: 299px
+    &__button
+        margin-top: 50px
+        display: flex
+        justify-content: center
+        padding-top: 10px
+        width: 351px
+        height: 100px
+        text-decoration: none
+        background: url('../img/svgo/sticker.svg') no-repeat 50% 50%
+        background-size: contain
+        
+        span
+            transform: rotate(-3deg)
+            font-family: Madelyn
+            font-size: 45px
+            line-height: 1.89
+            color: #ffffff
+        &_active
+            background: url('../img/svgo/sticker-orange-2.svg') no-repeat 50% 50%
+            background-size: contain
+            cursor: pointer
+        &_total
+            background: url('https://via.placeholder.com/390x100.png') no-repeat 50% 50%
+            background-size: contain
+            width: 390px
+            align-self: center
+            span
+                width: 363px
+                height: 45px
+    &__props-label
+
+.order-form-success
+    height: 600px
+    padding-top: 160px
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__title
+        font-family: Madelyn
+        font-size: 85px
+        line-height: 1
+        color: #5b4630
+    &__text
+        margin-top: 9px
+        font-size: 18px
+        line-height: 1.33
+        color: #5b4630
+    &__manager-text
+        margin-top: 25px
+        font-size: 14px
+        line-height: 2
+        text-align: center
+        color: #a2a2a1
+    &__manager-name
+        margin-top: 9px
+        font-size: 18px
+        line-height: 1.33
+        color: #5b4630
+    &__manager-phone
+        margin-top: 4px
+        font-size: 18px
+        line-height: 1.33
+        color: #5b4630

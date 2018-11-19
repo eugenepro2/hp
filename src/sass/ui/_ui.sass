@@ -7,6 +7,24 @@
     font-family: Circe
 body
     background-color: #f8f5f2
-    
+
+.out
+    overflow: hidden
 .hidden
     display: none
+
+@media (max-width: 1024px)
+    .container
+        max-width: 1024px
+
+@media (max-width: 768px)
+    .container
+        max-width: 768px
+    .hidden-768
+        display: none
+    .visible-768
+        display: block
+@media (max-width: 320px)
+    .container
+        max-width: 320px
+        padding: 0 10px

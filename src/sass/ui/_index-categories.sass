@@ -2,9 +2,12 @@
     display: flex
     width: 100%
     &__item
+        box-sizing: border-box
+        padding-top: 68px
+        padding-bottom: 34px
         display: flex
+        justify-content: space-between
         flex-direction: column
-        justify-content: center
         align-items: center
         width: 25%
         height: 256px
@@ -17,10 +20,52 @@
         text-align: center
         color: #492b26
     &__button
-        margin-top: 45px
+        height: 85px
         font-family: Madelyn
         font-size: 42px
         line-height: 1.07
         text-align: center
         color: #492b26
         text-decoration: none
+
+
+@media (max-width: 1024px)
+    .index-categories
+        &__item
+            width: 33.4%
+            height: 200px
+            padding-top: 49px
+            padding-bottom: 39px
+            background-color: #3d2824
+            &:nth-child(2n)
+                background-color: #492b26
+            &:last-child
+                display: none
+        &__title
+            font-size: 16px
+            line-height: 1.31
+            color: #ffffff
+        &__button
+            height: 45px
+            font-size: 32px
+            line-height: 1.41
+            color: #ffffff
+
+@media (max-width: 768px)
+    .index-categories
+        &__item
+            background-color: #ffffff
+            &:nth-child(2n)
+                background-color: #f0eae4
+        &__title
+            color: #492b26
+        &__button
+            color: #492b26
+
+
+@media (max-width: 320px)
+    .index-categories
+        &__item
+        &__title
+        &__button
+

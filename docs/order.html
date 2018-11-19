@@ -26,6 +26,7 @@
               <div class="header__gift-img"></div>
               <div class="header__gift-text">Подарки в розницу</div>
             </a>
+            <div class="header__burger"></div>
           </div>
         </div>
       </header>
@@ -41,81 +42,103 @@
           </div>
         </div>
       </div>
-      <section class="order-form">
+      <div class="order-form">
         <div class="container">
           <div class="order-form__inner">
-            <h2 class="order-form__title">Оформление заказа</h2>
+            <div class="order-form__title">Оформление заказа</div>
             <form class="order-form__form">
-              <div class="order-form__text">Я хочу оплатить заказ как:<div class="order-form__props"><label for="" class="order-form__props-label"><input type="radio"><span>Юрлицо с НДС</span></label><label for="" class="order-form__props-label"><input type="radio"><span>Юрлицо без НДС</span></label><label for="" class="order-form__props-label"><input type="radio"><span>Физлицо</span></label></div>
-              </div>
-              <div class="order-form__accordion order-form-accordion">
-                <div class="order-form-accordion__item">
-                  <div class="order-form-accordion__head">
-                    <div class="order-form-accordion__title">1 шаг <span>–Реквизиты </span></div>
-                    <div class="order-form-accordion__edit">Изменить</div>
-                  </div>
-                  <div class="order-form-accordion__body">
-                    <div class="order-form-accordion__col">
-                      <div class="order-form-accordion__text">Автозаполнение по ИНН</div><input type="text" placeholder="Введите ИНН" class="order-form-accordion__input">
+              <div class="order-form__text">Я хочу оплатить заказ как:</div>
+              <div class="order-form__props"><label for="order-form__nds" class="order-form__props-label"><input id="order-form__nds" type="radio" name="order-props" hidden>
+                  <div class="order-form__props-img"></div><span>Юрлицо с НДС</span>
+                </label><label for="order-form__wnds" class="order-form__props-label"><input id="order-form__wnds" type="radio" name="order-props" hidden>
+                  <div class="order-form__props-img"></div><span>Юрлицо без НДС</span>
+                </label><label for="order-form__fiz" class="order-form__props-label"><input id="order-form__fiz" type="radio" name="order-props" hidden>
+                  <div class="order-form__props-img"></div><span>Физлицо</span>
+                </label></div>
+              <div class="order-form__accordion">
+                <div class="order-form-accordion">
+                  <div class="order-form-accordion__item order-form-accordion__item_active">
+                    <div class="order-form-accordion__head">
+                      <div class="order-form-accordion__title">1 шаг <span>–Реквизиты </span></div>
+                      <div class="order-form-accordion__edit">Изменить</div>
                     </div>
-                    <div class="order-form-accordion__col"><input type="text" placeholder="Наименование юрлица" class="order-form-accordion__input"><input type="text" placeholder="Юридический адрес" class="order-form-accordion__input"><input type="text" placeholder="Фактический адрес" class="order-form-accordion__input"><input type="text" placeholder="ИНН" class="order-form-accordion__input"><input type="text" placeholder="КПП" class="order-form-accordion__input"><input type="text" placeholder="Р/С" class="order-form-accordion__input"><input type="text" placeholder="К/С" class="order-form-accordion__input"></div>
-                  </div>
-                  <div class="order-form-accordion__button">Продолжить оформление</div>
-                </div>
-                <div class="order-form-accordion__item">
-                  <div class="order-form-accordion__head">
-                    <div class="order-form-accordion__title">2 шаг <span>–Выбор доставки</span></div>
-                    <div class="order-form-accordion__edit">Изменить</div>
-                  </div>
-                  <div class="order-form-accordion__body">
-                    <div class="order-form-accordion__col"><label for="" class="order-form-accordion__props-label"><input type="radio"><span>Самовывоз </span></label></div>
-                    <div class="order-form-accordion__col"><label for="" class="order-form-accordion__props-label"><input type="radio"><span>Доставка </span></label><input type="text" placeholder="Город" class="order-form-accordion__input"><input type="text" placeholder="Улица" class="order-form-accordion__input"><input type="text" placeholder="Дом" class="order-form-accordion__input"><input type="text" placeholder="Квартира/Офис" class="order-form-accordion__input"></div>
-                  </div>
-                  <div class="order-form-accordion__button">Продолжить оформление</div>
-                </div>
-                <div class="order-form-accordion__item">
-                  <div class="order-form-accordion__head">
-                    <div class="order-form-accordion__title">3 шаг <span>–Контактные данные и подтверждение</span></div>
-                  </div>
-                  <div class="order-form-accordion__body">
-                    <div class="order-form-accordion__col">
-                      <div class="order-form-accordion__text">Заказчик</div><input type="text" placeholder="Имя" class="order-form-accordion__input"><input type="text" placeholder="Как с вами связаться" class="order-form-accordion__input">
-                    </div>
-                    <div class="order-form-accordion__col">
-                      <div class="order-form-accordion__text"> <span>Получатель</span><label for="" class="order-form-accordion__checkbox"><input type="checkbox"><span>Одно лицо</span></label></div><input type="text" placeholder="Имя" class="order-form-accordion__input"><input type="text" placeholder="Как с вами связаться" class="order-form-accordion__input">
-                    </div>
-                    <div class="order-form-accordion__total">
-                      <div class="order-form-accordion__text">Заказ #154</div>
-                      <div class="order-form-accordion__total">
-                        <ul>
-                          <li><span> Сумма</span><span> 1 400 157 ₽</span></li>
-                          <li><span> Сумма</span><span> 1 400 157 ₽</span></li>
-                          <li><span> Сумма</span><span> 1 400 157 ₽</span></li>
-                        </ul>
+                    <div class="order-form-accordion__body">
+                      <div class="order-form-accordion__text">Автозаполнение по ИНН</div>
+                      <div class="order-form-accordion__body-inner">
+                        <div class="order-form-accordion__col"><input type="text" placeholder="Введите ИНН" class="order-form-accordion__input order-form-accordion__input_mini"></div>
+                        <div class="order-form-accordion__col"><input type="text" placeholder="Наименование юрлица" class="order-form-accordion__input"><input type="text" placeholder="Юридический адрес" class="order-form-accordion__input"><input type="text" placeholder="Фактический адрес" class="order-form-accordion__input">
+                          <div class="order-form-accordion__row"><input type="text" placeholder="ИНН" class="order-form-accordion__input order-form-accordion__input_mini"><input type="text" placeholder="КПП" class="order-form-accordion__input order-form-accordion__input_mini"></div><input type="text" placeholder="Р/С" class="order-form-accordion__input"><input type="text" placeholder="К/С" class="order-form-accordion__input">
+                          <div class="order-form-accordion__button"> <span>Продолжить оформление</span></div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="order-form-accordion__button">Сформировать счет на оплату</div>
+                  <div class="order-form-accordion__item">
+                    <div class="order-form-accordion__head">
+                      <div class="order-form-accordion__title">2 шаг <span>–Выбор доставки</span></div>
+                      <div class="order-form-accordion__edit">Изменить</div>
+                    </div>
+                    <div class="order-form-accordion__body">
+                      <div class="order-form-accordion__body-inner">
+                        <div class="order-form-accordion__col"><label for="order-form__pickup" class="order-form__props-label"><input id="order-form__pickup" type="radio" name="order-props-delivery" hidden>
+                            <div class="order-form__props-img"></div><span>Самовывоз</span>
+                          </label>
+                          <div class="order-form__pickup">Санкт-Петербург, ул. Гельсингфорсская, 3. На территории завода "Красная нить". Лестница 7, 5 этаж.</div>
+                        </div>
+                        <div class="order-form-accordion__col"><label for="order-form__delivery" class="order-form__props-label"><input id="order-form__delivery" type="radio" name="order-props-delivery" hidden>
+                            <div class="order-form__props-img"></div><span>Доставка </span>
+                          </label><input type="text" placeholder="Город" class="order-form-accordion__input"><input type="text" placeholder="Улица" class="order-form-accordion__input"><input type="text" placeholder="Дом" class="order-form-accordion__input"><input type="text" placeholder="Квартира/Офис" class="order-form-accordion__input">
+                          <div class="order-form-accordion__button order-form-accordion__button_active"> <span>Продолжить оформление</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-form-accordion__item">
+                    <div class="order-form-accordion__head">
+                      <div class="order-form-accordion__title">3 шаг <span>–Контактные данные и подтверждение</span></div>
+                    </div>
+                    <div class="order-form-accordion__body order-form-accordion__body_total">
+                      <div class="order-form-accordion__body-inner">
+                        <div class="order-form-accordion__col">
+                          <div class="order-form-accordion__text">Заказчик</div><input type="text" placeholder="Имя" class="order-form-accordion__input order-form-accordion__input_total"><input type="text" placeholder="Как с вами связаться" class="order-form-accordion__input order-form-accordion__input_total">
+                        </div>
+                        <div class="order-form-accordion__col">
+                          <div class="order-form-accordion__text"> <span>Получатель</span><label for="" class="order-form-accordion__checkbox"><input type="checkbox"><span>Одно лицо</span></label></div><input type="text" placeholder="Имя" class="order-form-accordion__input order-form-accordion__input_total"><input type="text" placeholder="Как с вами связаться" class="order-form-accordion__input order-form-accordion__input_total">
+                        </div>
+                        <div class="order-form-accordion__col order-form-accordion__col_total">
+                          <div class="order-form-accordion__text">Заказ #154</div>
+                          <div class="order-form-accordion__total">
+                            <ul>
+                              <li><span> Сумма</span><span> 1 400 157 ₽</span></li>
+                              <li><span> Сумма</span><span> 1 400 157 ₽</span></li>
+                              <li><span> Сумма</span><span> 1 400 157 ₽</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="order-form-accordion__button order-form-accordion__button_total"> <span>Сформировать счет на оплату</span></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </form>
           </div>
-          <div class="order-form__success">
-            <div class="order-form__success-title">Спасибо!</div>
-            <div class="order-form__success-text">Ваш заказ #154 оформлен в Happy Partner</div>
-            <div class="order-form__success-manager-text">Ваш персональный менеджер</div>
-            <div class="order-form__success-manager-name">Анна Галенда</div>
-            <div class="order-form__success-manager-phone">+7 821 183-24-42</div>
+          <div class="order-form-success">
+            <div class="order-form-success__title">Спасибо!</div>
+            <div class="order-form-success__text">Ваш заказ #154 оформлен в Happy Partner</div>
+            <div class="order-form-success__manager-text">Ваш персональный менеджер</div>
+            <div class="order-form-success__manager-name">Анна Галенда</div>
+            <div class="order-form-success__manager-phone">+7 821 183-24-42</div>
           </div>
         </div>
-      </section>
+      </div>
       <footer class="footer">
         <div class="container">
           <div class="footer__inner">
             <div class="footer__head">
               <div src="img/logo.png" alt="Happy Partner" class="footer__logo"></div>
               <div class="footer__social-list"><a href="#" class="footer__social-icon footer__social-icon_vk"></a><a href="#" class="footer__social-icon footer__social-icon_inst"></a><a href="#" class="footer__social-icon footer__social-icon_fb"></a><a href="#" class="footer__social-icon footer__social-icon_ok"></a><a href="#" class="footer__social-icon footer__social-icon_tw"></a></div>
-            </div><a href="#" class="footer__gift">
+            </div><a href="#" class="footer__gift hidden-768">
               <div class="footer__gift-img"></div>
               <div class="footer__gift-text">Подарки в розницу</div>
             </a>
@@ -161,7 +184,7 @@
               <div class="footer__address">
                 <div class="footer__list footer__list_address">
                   <div class="footer__list-title">Санкт-Петербург</div>
-                  <ul class="footer__ul">
+                  <ul class="footer__ul footer__ul_address">
                     <li class="footer__li footer__li_address">+7 (812) 648-21-86</li>
                     <li class="footer__li footer__li_address">+7 (800) 333-12-86 - бесплатно</li>
                     <li class="footer__li footer__li_address">194044, ул. Гельсингфорсская, 3, лестница 8, 5 этаж.<br>На территории завода <br>«Красная нить». <br>Ст. м. Выборгская.</li>
@@ -170,15 +193,103 @@
                 </div>
                 <div class="footer__list footer__list_address">
                   <div class="footer__list-title">Москва</div>
-                  <ul class="footer__ul">
+                  <ul class="footer__ul footer__ul_address">
                     <li class="footer__li footer__li_address">+7 (495) 215-11-34</li>
                     <li class="footer__li footer__li_address">+7 (800) 333-12-86 - бесплатно</li>
                     <li class="footer__li footer__li_address">107140, ул. Верхняя Красносельская, д.2., 3 этаж.<br>Ст. м. "Красносельская". <br>Для связи на месте <br>+7 (499) 503-06-42</li>
                     <li class="footer__li footer__li_address">Пн. – Пт. 9:00 – 19:00</li>
                   </ul>
-                </div><label for="" class="footer__search"><span class="footer__search-icon"></span><input type="text" placeholder="Поиск по сайту" class="footer__search-input"></label>
+                </div><label for="footer__search" class="footer__search hidden-768"><span class="footer__search-icon"></span><input id="footer__search" type="text" placeholder="Поиск по сайту" class="footer__search-input"></label>
               </div>
             </div>
+            <div class="footer__accordion">
+              <div class="accordion">
+                <div class="accordion__inner">
+                  <div class="accordion__item">
+                    <div class="accordion__head">
+                      <div class="accortion__title">Наши подарки</div>
+                      <div class="accordion__button"></div>
+                    </div>
+                    <div class="accordion__body">
+                      <ul class="footer__ul">
+                        <li><a href="#" class="footer__li">Разработка подарков</a></li>
+                        <li><a href="#" class="footer__li">Для партнеров</a></li>
+                        <li><a href="#" class="footer__li">Из дерева</a></li>
+                        <li><a href="#" class="footer__li">Из ткани</a></li>
+                        <li><a href="#" class="footer__li">Из фетра</a></li>
+                        <li><a href="#" class="footer__li">Печенье с логотипом</a></li>
+                        <li><a href="#" class="footer__li"> На новый год</a></li>
+                        <li><a href="#" class="footer__li">Детям в новый год</a></li>
+                        <li><a href="#" class="footer__li">Слово пасечника</a></li>
+                        <li><a href="#" class="footer__li">Эусклюзивные</a></li>
+                        <li><a href="#" class="footer__li">Чай в подарок</a></li>
+                        <li><a href="#" class="footer__li">Кофе в поарок</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__head">
+                      <div class="accortion__title">Как мы работаем</div>
+                      <div class="accordion__button"></div>
+                    </div>
+                    <div class="accordion__body">
+                      <ul class="footer__ul">
+                        <li><a href="#" class="footer__li">О компании</a></li>
+                        <li><a href="#" class="footer__li">Доставка и оплата</a></li>
+                        <li><a href="#" class="footer__li">Отзывы</a></li>
+                        <li><a href="#" class="footer__li">Контакты</a></li>
+                        <li><a href="#" class="footer__li">Новости и статьи</a></li>
+                        <li><a href="#" class="footer__li">Вакансии</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__head">
+                      <div class="accortion__title">Сотрудничество</div>
+                      <div class="accordion__button"></div>
+                    </div>
+                    <div class="accordion__body">
+                      <ul class="footer__ul">
+                        <li><a href="#" class="footer__li">Стать дилером</a></li>
+                        <li><a href="#" class="footer__li">Поставщикам</a></li>
+                        <li><a href="#" class="footer__li">Рекламным агентствам</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__head">
+                      <div class="accortion__title">Санкт-Петербург</div>
+                      <div class="accordion__button"></div>
+                    </div>
+                    <div class="accordion__body">
+                      <ul class="footer__ul footer__ul_address">
+                        <li class="footer__li footer__li_address">+7 (812) 648-21-86</li>
+                        <li class="footer__li footer__li_address">+7 (800) 333-12-86 - бесплатно</li>
+                        <li class="footer__li footer__li_address">194044, ул. Гельсингфорсская, 3, лестница 8, 5 этаж.<br>На территории завода <br>«Красная нить». <br>Ст. м. Выборгская.</li>
+                        <li class="footer__li footer__li_address">Пн. – Пт.: 9:00 – 18:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__head">
+                      <div class="accortion__title">Москва</div>
+                      <div class="accordion__button"></div>
+                    </div>
+                    <div class="accordion__body">
+                      <ul class="footer__ul footer__ul_address">
+                        <li class="footer__li footer__li_address">+7 (495) 215-11-34</li>
+                        <li class="footer__li footer__li_address">+7 (800) 333-12-86 - бесплатно</li>
+                        <li class="footer__li footer__li_address">107140, ул. Верхняя Красносельская, д.2., 3 этаж.<br>Ст. м. "Красносельская". <br>Для связи на месте <br>+7 (499) 503-06-42</li>
+                        <li class="footer__li footer__li_address">Пн. – Пт. 9:00 – 19:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><label for="footer__search" class="footer__search hidden visible-768"><span class="footer__search-icon"></span><input id="footer__search" type="text" placeholder="Поиск по сайту" class="footer__search-input"></label><a href="#" class="footer__gift hidden visible-768">
+              <div class="footer__gift-img"></div>
+              <div class="footer__gift-text">Подарки в розницу</div>
+            </a>
           </div>
         </div>
         <div class="footer__copyright">
