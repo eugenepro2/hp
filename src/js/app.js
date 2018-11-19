@@ -9,11 +9,28 @@ $(".index-slider__carousel").owlCarousel({
   items: 1,
   dotsClass: "index-slider__dots"
 });
+
 $(".index-cards__carousel").owlCarousel({
   loop: true,
-  margin: 0,
+  margin: 100,
   dots: true,
-  items: 1
+  items: 1,
+  dotsClass: "index-cards__dots"
+});
+
+$(".index-cases__carousel").owlCarousel({
+  loop: true,
+  margin: 100,
+  dots: true,
+  items: 1,
+  dotsClass: "index-cases__dots"
+});
+
+$(".index-advantages__carousel").owlCarousel({
+  loop: true,
+  margin: 50,
+  dots: false,
+  items: 3
 });
 
 //tags
@@ -54,4 +71,12 @@ $('.basket-form__form-checkbox').click(function(){
 $('.accordion__head').click(function(){
     $(this).children('.accordion__button').toggleClass('accordion__button_active');
     $(this).siblings('.accordion__body').toggleClass('accordion__body_active');
+});
+
+//advan. more
+
+$('.index-advantages__more').click(function(){
+    $(this).hide();
+    $('.index-advantages__info').addClass('index-advantages__info_active');
+    $('.text-collapse').removeClass('text-collapse');
 });
