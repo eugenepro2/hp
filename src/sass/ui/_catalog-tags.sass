@@ -10,6 +10,8 @@
         display: flex
         flex-wrap: wrap
     &__button
+        display: flex
+        justify-content: space-between
         margin-right: 8px
         margin-bottom: 8px
         padding: 4px 12px
@@ -21,3 +23,94 @@
         &_active
             color: #ffffff
             background-color: #34ab9c
+    &__img
+        display: none
+        box-sizing: border-box
+        width: 21px
+        height: 21px
+        border-radius: 2px
+        border: 1px solid #f0eae4
+
+    input:checked ~ .catalog-tags__img 
+        border: none
+        background: url('../img/svgo/select.svg') no-repeat 50% 50%
+        background-color: #f6773e
+
+    &__mobile-menu
+        display: none
+        padding: 15px 0
+        box-sizing: border-box
+        width: 100%
+        align-items: center
+        border-bottom: 1px solid #f0eae4
+    &__mobile-name
+        font-size: 14px
+        color: #b3b3b3
+    &__mobile-text
+        margin-left: 5px
+        font-size: 14px
+        width: 210px
+        color: #644733
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+    &__mobile-button
+        width: 21px
+        height: 11px
+        background: url('../img/svgo/arrow-right.svg') no-repeat 50% 50%
+        margin-left: auto
+    &__mobile-list
+        transition: all ease 0.3s
+    &__mobile-header
+        width: 100%
+        display: none
+        justify-content: space-between
+        align-items: center
+    &__mobile-header-title
+        font-size: 24px
+        line-height: 1.17
+        color: #5b4630
+    &__mobile-header-close
+        width: 25px
+        height: 24px
+        background: url('../img/svgo/close-big.svg') no-repeat 50% 50%
+        background-size: contain
+@media (max-width: 1024px)
+    .catalog-tags
+
+
+@media (max-width: 768px)
+    .catalog-tags
+
+    
+@media (max-width: 320px)
+    .catalog-tags
+        &__inner
+            padding: 0
+        &__mobile-menu
+            display: flex
+        &__mobile-header
+            display: flex
+        &__mobile-list
+            width: 100%
+            height: 100vh
+            padding: 20px
+            position: fixed
+            top: 0
+            left: -320px
+            background: #ffffff
+            z-index: 100
+            overflow-y: scroll
+        &__list
+            margin-top: 35px
+            flex-direction: column
+            
+        &__button
+            padding: 14px 0
+            border: none
+            margin: 0
+            &_active
+                background: none
+                color: #644733
+        &__img
+            display: block

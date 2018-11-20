@@ -90,13 +90,15 @@
         width: 26px
         height: 16px
         cursor: pointer
-        background: url('../img/burger.svg') no-repeat 50% 100%
+        background: url('../img/burger-dark.svg') no-repeat 50% 100%
     &_dark
         background-color: #492b26
         color: #f8f5f2
         border-bottom: none
         a
             color: #f8f5f2
+        .header__burger
+            background: url('../img/svgo/burger.svg') no-repeat 50% 100%
     &_bg
         &::before
             position: absolute
@@ -155,3 +157,5 @@
     .header
         &__contacts
             display: none
+        &__burger
+            margin-right: 7px

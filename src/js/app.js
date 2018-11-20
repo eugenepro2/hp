@@ -34,7 +34,7 @@ $(".index-advantages__carousel").owlCarousel({
 });
 
 //tags
-$('.catalog-tags__button').click(function(){
+$('.catalog-tags__button').change(function(){
     $(this).toggleClass('catalog-tags__button_active');
 });
 
@@ -79,4 +79,21 @@ $('.index-advantages__more').click(function(){
     $(this).hide();
     $('.index-advantages__info').addClass('index-advantages__info_active');
     $('.text-collapse').removeClass('text-collapse');
+});
+
+//popap menu
+$('.catalog-tags__mobile-header-close').click(function(){
+    $('.catalog-tags__mobile-list').css('left', '-320px');
+});
+$('.catalog-tags__mobile-button').click(function(){
+    $('.catalog-tags__mobile-list').css('left', '0px');
+});
+
+$('.catalog-filter__mobile-header-close').click(function(){
+    $(this).parents('.catalog-filter__target').find('.catalog-filter__mobile-list').css('left', '-320px');
+    $(this).parents('.catalog-filter__price').find('.catalog-filter__mobile-list').css('left', '-320px');
+});
+$('.catalog-filter__mobile-button').click(function(){
+    $(this).parents('.catalog-filter__target').find('.catalog-filter__mobile-list').css('left', '0px');
+    $(this).parents('.catalog-filter__price').find('.catalog-filter__mobile-list').css('left', '0px');
 });

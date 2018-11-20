@@ -35,6 +35,7 @@
         height: 386px
         top: 75px
         left: 0 
+        
         border-radius: 5px
         box-shadow: 0 10px 45px 0 rgba(0, 0, 0, 0.16)
         background-color: #ffffff
@@ -59,3 +60,99 @@
         font-size: 16px
         color: #b3b3b3
         cursor: pointer
+    &__mobile-menu
+        display: none
+        padding: 15px 0
+        box-sizing: border-box
+        width: 100%
+        align-items: center
+        border-bottom: 1px solid #f0eae4
+    &__mobile-name
+        font-size: 14px
+        color: #b3b3b3
+    &__mobile-text
+        margin-left: 5px
+        font-size: 14px
+        width: 210px
+        color: #644733
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+    &__mobile-button
+        width: 21px
+        height: 11px
+        background: url('../img/svgo/arrow-right.svg') no-repeat 50% 50%
+        margin-left: auto
+    &__mobile-list
+        transition: all ease 0.3s
+    &__mobile-header
+        width: 100%
+        display: none
+        justify-content: space-between
+        align-items: center
+    &__mobile-header-title
+        font-size: 24px
+        line-height: 1.17
+        color: #5b4630
+    &__mobile-header-close
+        width: 25px
+        height: 24px
+        background: url('../img/svgo/close-big.svg') no-repeat 50% 50%
+        background-size: contain
+@media (max-width: 1024px)
+    .catalog-filter
+        &__name
+            font-size: 32px
+            line-height: 1.25
+        &__button
+            font-size: 78px
+
+@media (max-width: 768px)
+    .catalog-filter
+        &__inner
+            flex-wrap: wrap
+            justify-content: flex-start
+        &__name
+            font-size: 28px     
+            line-height: 1.43
+        &__button
+            margin: 0 12px
+            font-size: 67px
+        &__reset
+            margin-left: 0
+            margin-top: 25px
+@media (max-width: 320px)
+    .catalog-filter
+        &__inner
+            padding: 0
+        &__target
+            width: 100%
+        &__price
+            width: 100%
+        &__name
+            display: none
+        &__button
+            display: none
+        &__mobile-menu
+            display: flex
+        &__mobile-header
+            display: flex
+        &__mobile-list
+            width: 100%
+            height: 100vh
+            padding: 20px
+            position: fixed
+            top: 0
+            left: -320px
+            background: #ffffff
+            z-index: 100
+            overflow-y: scroll
+        &__mobile-text
+            width: auto
+        &__menu
+            display: block
+            width: 100%
+            height: auto
+            box-shadow: none
+        &__reset
+            color: #f6773e
