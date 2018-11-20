@@ -85,6 +85,22 @@
     
 @media (max-width: 320px)
     .catalog-tags
+        position: relative
+        &::before
+            position: absolute
+            content: ''
+            top: -25px
+            left: 50%
+            margin-left: -160px
+            width: 320px
+            height: 625px
+            background: url('../img/tags-bg.png') no-repeat 50% 0
+            z-index: -1
+
+        &__title
+            font-size: 24px
+            line-height: 1.67
+            margin-bottom: 0
         &__inner
             padding: 0
         &__mobile-menu
