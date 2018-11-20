@@ -99,6 +99,7 @@
         right: 32px
         cursor: pointer
         background: url('../img/svgo/close.svg') no-repeat 50% 50%
+        background-size: contain
 
     &__form
         margin-top: 100px 
@@ -179,8 +180,119 @@
     .basket-form
         &__title
             font-size: 32px
+            line-height: 1.25
+        &__item
+            height: 250px
+            margin-bottom: 20px
+            &:nth-child(3)
+                display: none
+        &__item-img
+            width: 250px
+            height: 250px
+        &__item-info
+            padding: 29px 40px
+            height: 250px
+        &__item-title
+            width: 585px
+            font-size: 28px
+            line-height: 1.14
+        &__form
+            margin-top: 75px 
+        &__form-props
+            margin-top: 55px
 @media (max-width: 768px)
     .basket-form
+        &__title
+            font-size: 28px
+            line-height: 1.43
+        &__item
+            height: 200px
+            margin-bottom: 20px
+            &:nth-child(3)
+                display: none
+        &__item-img
+            width: 200px
+            height: 200px
+        &__item-info
+            height: 200px
+            padding: 19px 25px
+        &__item-title
+            width: 367px
+            font-size: 24px
+            line-height: 1.17
+        &__form
+            margin-top: 50px 
+        &__form-props
+            margin-top: 20px
 
 @media (max-width: 320px)
     .basket-form
+        &__title
+            font-size: 24px
+            line-height: 1.17
+            text-align: center
+        &__download
+            position: static
+        &__download-img
+            display: none
+        &__download-text
+            width: 100%
+            margin-left: 0  
+            text-align: center
+            color: #f6773e
+        &__list
+            margin-top: 25px
+        &__item
+            flex-direction: column
+            width: 270px
+            height: 430px
+            margin: 0 auto 20px
+        &__item-img
+            width: 270px
+            height: 270px
+        &__item-button
+            top: 15px
+            right: 15px
+            background: url('../img/svgo/close-white.svg') no-repeat 50% 50%
+        &__item-info
+            height: 160px
+            padding: 16px 18px
+        &__item-title
+            width: 100%
+            font-size: 16px
+            line-height: 1.13
+        &__item-calc
+            span
+                font-size: 18px
+                line-height: 1.33
+        &__item-price
+            font-size: 18px
+            line-height: 1.33
+        &__item-input
+            width: 57px
+            height: 36px
+            font-size: 18px
+            line-height: 1.33
+        &__form
+            margin: 0 auto
+            width: 270px
+            margin-top: 20px
+        &__form-text
+            display: none
+        &__form-price
+            display: none    
+        &__form-props
+            width: 270px
+            margin-top: 0 
+            flex-direction: column
+            align-items: flex-start
+        &__form-checkbox
+            width: 100%
+            margin-right: 0
+            margin-bottom: 25px
+        &__form-textarea
+            margin-top: 30px
+            width: 270px
+            height: 179px
+        &__form-submit
+            display: none

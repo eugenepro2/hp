@@ -12,3 +12,19 @@
         text-decoration: none
         text-transform: uppercase
         color: #a2a2a1
+
+
+
+@media (max-width: 320px)
+    .breadcrumbs
+        &__inner
+            padding-bottom: 8px
+        &__ul
+            justify-content: center
+        &__li
+            font-size: 10px
+            display: none
+            margin: 0
+            &:last-child
+                display: block
+                text-align: center

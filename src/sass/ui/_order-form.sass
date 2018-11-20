@@ -60,6 +60,8 @@
         font-size: 16px
         line-height: 1.75
         color: #644733
+
+
 .order-form-accordion
     &__item
         padding: 35px 40px
@@ -109,14 +111,28 @@
         &_total
             width: 300px
             margin-left: auto
+            justify-content: space-between
+    &__total-li
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__total-name
+        font-size: 16px
+        line-height: 1.75
+        color: #a2a2a1
+    &__total-total
+        font-size: 16px
+        line-height: 1.75
     &__row
         display: flex
         justify-content: space-between
         width: 100%
     &__text
+        display: flex
+        justify-content: space-between
         margin-bottom: 9px
-        font-size: 18px
-        line-height: 1.67
+        font-size: 20px
+        line-height: 1.5
         color: #644733
     &__input
         margin-bottom: 12px
@@ -163,7 +179,36 @@
             span
                 width: 363px
                 height: 45px
-    &__props-label
+
+
+    &__checkbox
+        padding-left: 29px
+        position: relative
+        height: 30px
+        display: flex
+        cursor: pointer
+        z-index: 10
+        
+        span
+            font-size: 16px
+            line-height: 1.88
+            color: #644733
+    &__img
+        position: absolute
+        content: ''
+        display: block
+        top: 4px
+        left: 0
+        width: 21px
+        height: 21px
+        border-radius: 2px
+        border: 1px solid #f0eae4
+        background-color: #ffffff
+    input:checked
+        + .order-form-accordion__img
+            background: url('../img/svgo/select.svg') no-repeat 50% 50%
+            background-color: #f6773e
+                
 
 .order-form-success
     height: 600px
@@ -198,3 +243,18 @@
         font-size: 18px
         line-height: 1.33
         color: #5b4630
+
+@media (max-width: 1024px)
+    .order-form
+    .order-form-accordion
+    .order-form-success
+
+@media (max-width: 768px)
+    .order-form
+    .order-form-accordion
+    .order-form-success
+
+@media (max-width: 320px)
+    .order-form
+    .order-form-accordion
+    .order-form-success
