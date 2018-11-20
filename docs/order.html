@@ -29,6 +29,17 @@
             <div class="header__burger"></div>
           </div>
         </div>
+        <div class="header__sidebar">
+          <div class="header__links header__links_sidebar"><a href="#" class="header__link">Об оплате и доставке</a><a href="#" class="header__link">Контакты и карта</a></div>
+          <div class="header__contacts header__contacts_sidebar"><a href="tel:+78126482186" class="header__phone header__phone_sidebar">+7 (812) 648-21-86</a><a href="mailto:Info@happypartner.ru" class="header__mail header__mail_sidebar">Info@happypartner.ru</a></div>
+          <div class="header__schedule header__schedule_sidebar">
+            <div class="header__date">Пн - Вс</div>
+            <div class="header__time">10:00 - 24:00</div>
+          </div><a href="#" class="header__gift header__gift_sidebar">
+            <div class="header__gift-img"></div>
+            <div class="header__gift-text">Подарки в розницу</div>
+          </a>
+        </div>
       </header>
       <!--END header-->
       <div class="breadcrumbs">
@@ -68,8 +79,10 @@
                         <div class="order-form-accordion__col"><input type="text" placeholder="Введите ИНН" class="order-form-accordion__input order-form-accordion__input_mini"></div>
                         <div class="order-form-accordion__col"><input type="text" placeholder="Наименование юрлица" class="order-form-accordion__input"><input type="text" placeholder="Юридический адрес" class="order-form-accordion__input"><input type="text" placeholder="Фактический адрес" class="order-form-accordion__input">
                           <div class="order-form-accordion__row"><input type="text" placeholder="ИНН" class="order-form-accordion__input order-form-accordion__input_mini"><input type="text" placeholder="КПП" class="order-form-accordion__input order-form-accordion__input_mini"></div><input type="text" placeholder="Р/С" class="order-form-accordion__input"><input type="text" placeholder="К/С" class="order-form-accordion__input">
-                          <div class="order-form-accordion__button"> <span>Продолжить оформление</span></div>
                         </div>
+                      </div>
+                      <div class="order-form-accordion__button-wrap">
+                        <div class="order-form-accordion__button"> <span>Продолжить оформление</span></div>
                       </div>
                     </div>
                   </div>
@@ -80,16 +93,24 @@
                     </div>
                     <div class="order-form-accordion__body">
                       <div class="order-form-accordion__body-inner">
-                        <div class="order-form-accordion__col"><label for="order-form__pickup" class="order-form__props-label"><input id="order-form__pickup" type="radio" name="order-props-delivery" hidden>
+                        <div class="order-form-accordion__props"><label for="order-form__pickup" class="order-form__props-label"><input id="order-form__pickup" type="radio" name="order-props-delivery" checked hidden>
+                            <div class="order-form__props-img"></div><span>Самовывоз</span>
+                          </label><label for="order-form__delivery" class="order-form__props-label"><input id="order-form__delivery" type="radio" name="order-props-delivery" hidden>
+                            <div class="order-form__props-img"></div><span>Доставка </span>
+                          </label></div>
+                        <div class="order-form-accordion__col order-form-accordion__col_pickup"><label for="order-form__pickup2" class="order-form__props-label hidden-320"><input id="order-form__pickup2" type="radio" name="order-props-delivery" hidden>
                             <div class="order-form__props-img"></div><span>Самовывоз</span>
                           </label>
                           <div class="order-form__pickup">Санкт-Петербург, ул. Гельсингфорсская, 3. На территории завода "Красная нить". Лестница 7, 5 этаж.</div>
                         </div>
-                        <div class="order-form-accordion__col"><label for="order-form__delivery" class="order-form__props-label"><input id="order-form__delivery" type="radio" name="order-props-delivery" hidden>
+                        <div class="order-form-accordion__col order-form-accordion__col_delivery"><label for="order-form__delivery2" class="order-form__props-label hidden-320"><input id="order-form__delivery2" type="radio" name="order-props-delivery" hidden>
                             <div class="order-form__props-img"></div><span>Доставка </span>
-                          </label><input type="text" placeholder="Город" class="order-form-accordion__input"><input type="text" placeholder="Улица" class="order-form-accordion__input"><input type="text" placeholder="Дом" class="order-form-accordion__input"><input type="text" placeholder="Квартира/Офис" class="order-form-accordion__input">
-                          <div class="order-form-accordion__button order-form-accordion__button_active"> <span>Продолжить оформление</span></div>
+                          </label><input type="text" placeholder="Город" class="order-form-accordion__input"><input type="text" placeholder="Улица" class="order-form-accordion__input">
+                          <div class="order-form-accordion__row"><input type="text" placeholder="Дом" class="order-form-accordion__input order-form-accordion__input_mini"><input type="text" placeholder="Квартира/Офис" class="order-form-accordion__input order-form-accordion__input_mini"></div>
                         </div>
+                      </div>
+                      <div class="order-form-accordion__button-wrap">
+                        <div class="order-form-accordion__button order-form-accordion__button_active"> <span>Продолжить оформление</span></div>
                       </div>
                     </div>
                   </div>
@@ -99,26 +120,26 @@
                     </div>
                     <div class="order-form-accordion__body order-form-accordion__body_total">
                       <div class="order-form-accordion__body-inner">
-                        <div class="order-form-accordion__col">
-                          <div class="order-form-accordion__text">Заказчик</div><input type="text" placeholder="Имя" class="order-form-accordion__input order-form-accordion__input_total"><input type="text" placeholder="Как с вами связаться" class="order-form-accordion__input order-form-accordion__input_total">
+                        <div class="order-form-accordion__col order-form-accordion__col_contact">
+                          <div class="order-form-accordion__text">Заказчик</div><input type="text" placeholder="Имя" class="order-form-accordion__input order-form-accordion__input_contact"><input type="text" placeholder="Как с вами связаться" class="order-form-accordion__input order-form-accordion__input_contact">
                         </div>
-                        <div class="order-form-accordion__col">
+                        <div class="order-form-accordion__col order-form-accordion__col_contact">
                           <div class="order-form-accordion__text"> <span>Получатель</span><label for="order-form-accordion__checkbox" class="order-form-accordion__checkbox"><input type="checkbox" id="order-form-accordion__checkbox" hidden>
                               <div class="order-form-accordion__img"></div><span>Одно лицо</span>
-                            </label></div><input type="text" placeholder="Имя" class="order-form-accordion__input order-form-accordion__input_total"><input type="text" placeholder="Как с вами связаться" class="order-form-accordion__input order-form-accordion__input_total">
+                            </label></div><input type="text" placeholder="Имя" class="order-form-accordion__input order-form-accordion__input_contact"><input type="text" placeholder="Как с вами связаться" class="order-form-accordion__input order-form-accordion__input_contact">
                         </div>
                         <div class="order-form-accordion__col order-form-accordion__col_total">
-                          <div class="order-form-accordion__text">Заказ #154</div>
-                          <div class="order-form-accordion__total">
-                            <ul>
-                              <li class="order-form-accordion__total-li"><span class="order-form-accordion__total-name"> Сумма</span><span class="order-form-accordion__total"> 1 400 157 ₽</span></li>
-                              <li class="order-form-accordion__total-li"><span class="order-form-accordion__total-name"> Сроки изготовления</span><span class="order-form-accordion__total"> 7 дней</span></li>
-                              <li class="order-form-accordion__total-li"><span class="order-form-accordion__total-name"> Персональный менеджер</span><span class="order-form-accordion__total"> Анна Галенда</span></li>
-                            </ul>
-                          </div>
+                          <div class="order-form-accordion__text order-form-accordion__text_total">Заказ #154</div>
+                          <ul class="order-form-accordion__total">
+                            <li class="order-form-accordion__total-li"><span class="order-form-accordion__total-name"> Сумма</span><span class="order-form-accordion__total"> 1 400 157 ₽</span></li>
+                            <li class="order-form-accordion__total-li"><span class="order-form-accordion__total-name"> Сроки изготовления</span><span class="order-form-accordion__total"> 7 дней</span></li>
+                            <li class="order-form-accordion__total-li"><span class="order-form-accordion__total-name"> Персональный менеджер</span><span class="order-form-accordion__total"> Анна Галенда</span></li>
+                          </ul>
                         </div>
                       </div>
-                      <div class="order-form-accordion__button order-form-accordion__button_total"> <span>Сформировать счет на оплату</span></div>
+                      <div class="order-form-accordion__button-wrap">
+                        <div class="order-form-accordion__button order-form-accordion__button_total"> <span>Сформировать счет на оплату</span></div>
+                      </div>
                     </div>
                   </div>
                 </div>

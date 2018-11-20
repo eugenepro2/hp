@@ -133,6 +133,16 @@ $('.catalog-filter__mobile-button').click(function() {
     .css('left', '0px');
 });
 
+
+//burger
+
+$('.header__burger').click(function() {
+  $(this).toggleClass('header__burger_active');
+  $('.header__sidebar').toggleClass('header__sidebar_active');
+  $('.header').toggleClass('header_fixed');
+});
+
+
 //media
 
 // if(window.matchMedia('(min-width: 321px)').matches){

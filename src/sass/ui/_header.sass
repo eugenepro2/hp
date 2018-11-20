@@ -91,6 +91,11 @@
         height: 16px
         cursor: pointer
         background: url('../img/burger-dark.svg') no-repeat 50% 100%
+        background-size: contain
+        &_active
+            width: 25px
+            height: 24px
+            background: url('../img/close-big.svg') no-repeat 50% 100%
     &_dark
         background-color: #492b26
         color: #f8f5f2
@@ -110,6 +115,24 @@
             z-index: -1
             background: url('../img/header-bg.png') no-repeat 50% 100%
             background-size: cover
+    &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 100
+    &__sidebar
+        position: absolute
+        display: none
+        flex-direction: column
+        justify-content: space-between
+        padding: 15px 25px 45px
+        top: 75px
+        left: 0
+        right: 0
+        height: 300px
+        background-color: #ffffff
+        z-index: 100
         
 @media (max-width: 1024px)
     .header
@@ -142,14 +165,74 @@
         &__logo
             width: 182px
             height: 30px
+        &__sidebar
+            &_active
+                display: flex
         &__links
+            flex-direction: column
             display: none
+            margin-left: 0
+            &_sidebar
+                display: flex
+        &__link
+            margin-bottom: 20px
+            font-size: 12px
+            opacity: 1
+            font-weight: bold
+            letter-spacing: 0.8px
+            color: #644733
         &__schedule
+            margin-top: 20px
+            height: auto
             display: none
+            flex-direction: row
+            justify-content: flex-start
+            align-items: center
+            &_sidebar
+                margin-left: 0
+                display: flex
+        &__contacts
+            &_sidebar 
+                margin-top: auto      
+                margin-left: 0
+        &__phone
+            text-align: left
+            &_sidebar
+                opacity: 1
+                font-size: 18px
+                font-weight: bold
         &__mail
+            margin-top: 14px
+            opacity: 1
             display: none
+            color: #644733
+            &_sidebar
+                text-align: left
+                display: block
+        &__date
+            opacity: 1
+            font-size: 12px
+            font-weight: bold
+            letter-spacing: 0.6px
+            color: #b5b5b5
+        &__time
+            margin-left: 9px
+            opacity: 1
+            font-size: 12px
+            letter-spacing: 0.6px
+            color: #b5b5b5
         &__gift
+            right: 25px
+            bottom: 25px
+            position: absolute
             display: none
+            &_sidebar
+                display: flex
+        &__gift-text
+            display: block
+            width: 139px
+            font-size: 16px
+            line-height: 1.13
         &__burger
             display: block
 
@@ -157,5 +240,31 @@
     .header
         &__contacts
             display: none
+            &_sidebar 
+                display: flex
         &__burger
             margin-right: 7px
+        &__sidebar
+            position: fixed
+            bottom: 0
+            height: auto
+            padding-bottom: 94px
+        &__gift
+            background-color: #a1c23a
+            box-sizing: border-box
+            justify-content: space-between
+            margin-left: 0
+            width: auto
+            height: 58px
+            bottom: 0
+            left: 0
+            right: 0
+            padding: 20px 25px
+        &__gift-img
+            order: 2
+        &__gift-text
+            opacity: 1
+            margin: 0
+            font-size: 16px
+            line-height: 1.13
+            color: #ffffff

@@ -40,8 +40,9 @@
                                             input.order-form-accordion__input.order-form-accordion__input_mini(type="text" placeholder="КПП") 
                                         input.order-form-accordion__input(type="text" placeholder="Р/С") 
                                         input.order-form-accordion__input(type="text" placeholder="К/С") 
-                                        .order-form-accordion__button 
-                                            span Продолжить оформление
+                                .order-form-accordion__button-wrap
+                                    .order-form-accordion__button 
+                                        span Продолжить оформление
 
                         .order-form-accordion__item
                             .order-form-accordion__head
@@ -50,24 +51,38 @@
                                 .order-form-accordion__edit Изменить
                             .order-form-accordion__body
                                 .order-form-accordion__body-inner 
-                                    .order-form-accordion__col
+                                    .order-form-accordion__props
                                         label.order-form__props-label(for="order-form__pickup")
-                                            input(id="order-form__pickup" type="radio" name="order-props-delivery" hidden)
+                                            input(id="order-form__pickup" type="radio" name="order-props-delivery" checked hidden)
                                             .order-form__props-img
                                             span Самовывоз
-                                        .order-form__pickup Санкт-Петербург, ул. Гельсингфорсская, 3. На территории завода "Красная нить". Лестница 7, 5 этаж.
-
-                                    .order-form-accordion__col
                                         label.order-form__props-label(for="order-form__delivery")
                                             input(id="order-form__delivery" type="radio" name="order-props-delivery" hidden)
                                             .order-form__props-img
                                             span Доставка 
+                                    .order-form-accordion__col.order-form-accordion__col_pickup
+                                        label.order-form__props-label.hidden-320(for="order-form__pickup2")
+                                            input(id="order-form__pickup2" type="radio" name="order-props-delivery" hidden)
+                                            .order-form__props-img
+                                            span Самовывоз
+                                        .order-form__pickup Санкт-Петербург, ул. Гельсингфорсская, 3. На территории завода "Красная нить". Лестница 7, 5 этаж.
+
+                                    .order-form-accordion__col.order-form-accordion__col_delivery
+                                        label.order-form__props-label.hidden-320(for="order-form__delivery2")
+                                            input(id="order-form__delivery2" type="radio" name="order-props-delivery" hidden)
+                                            .order-form__props-img
+                                            span Доставка 
                                         input.order-form-accordion__input(type="text" placeholder="Город") 
                                         input.order-form-accordion__input(type="text" placeholder="Улица") 
-                                        input.order-form-accordion__input(type="text" placeholder="Дом") 
-                                        input.order-form-accordion__input(type="text" placeholder="Квартира/Офис") 
-                                        .order-form-accordion__button.order-form-accordion__button_active 
-                                            span Продолжить оформление
+                                        .order-form-accordion__row
+                                            input.order-form-accordion__input.order-form-accordion__input_mini(type="text" placeholder="Дом") 
+                                            input.order-form-accordion__input.order-form-accordion__input_mini(type="text" placeholder="Квартира/Офис") 
+                                
+                                
+
+                                .order-form-accordion__button-wrap
+                                    .order-form-accordion__button.order-form-accordion__button_active 
+                                        span Продолжить оформление
 
                         .order-form-accordion__item
                             .order-form-accordion__head
@@ -75,34 +90,34 @@
                                     span –Контактные данные и подтверждение
                             .order-form-accordion__body.order-form-accordion__body_total
                                 .order-form-accordion__body-inner
-                                    .order-form-accordion__col
+                                    .order-form-accordion__col.order-form-accordion__col_contact
                                         .order-form-accordion__text Заказчик
-                                        input.order-form-accordion__input.order-form-accordion__input_total(type="text" placeholder="Имя") 
-                                        input.order-form-accordion__input.order-form-accordion__input_total(type="text" placeholder="Как с вами связаться")                             
-                                    .order-form-accordion__col
+                                        input.order-form-accordion__input.order-form-accordion__input_contact(type="text" placeholder="Имя") 
+                                        input.order-form-accordion__input.order-form-accordion__input_contact(type="text" placeholder="Как с вами связаться")                             
+                                    .order-form-accordion__col.order-form-accordion__col_contact
                                         .order-form-accordion__text 
                                             span Получатель
                                             label.order-form-accordion__checkbox(for="order-form-accordion__checkbox")
                                                 input(type="checkbox" id="order-form-accordion__checkbox" hidden) 
                                                 .order-form-accordion__img
                                                 span Одно лицо
-                                        input.order-form-accordion__input.order-form-accordion__input_total(type="text" placeholder="Имя") 
-                                        input.order-form-accordion__input.order-form-accordion__input_total(type="text" placeholder="Как с вами связаться") 
+                                        input.order-form-accordion__input.order-form-accordion__input_contact(type="text" placeholder="Имя") 
+                                        input.order-form-accordion__input.order-form-accordion__input_contact(type="text" placeholder="Как с вами связаться") 
                                     .order-form-accordion__col.order-form-accordion__col_total
-                                        .order-form-accordion__text Заказ #154
-                                        .order-form-accordion__total
-                                            ul
-                                                li.order-form-accordion__total-li
-                                                    span.order-form-accordion__total-name  Сумма
-                                                    span.order-form-accordion__total  1 400 157 ₽
-                                                li.order-form-accordion__total-li
-                                                    span.order-form-accordion__total-name  Сроки изготовления
-                                                    span.order-form-accordion__total  7 дней
-                                                li.order-form-accordion__total-li
-                                                    span.order-form-accordion__total-name  Персональный менеджер
-                                                    span.order-form-accordion__total  Анна Галенда
-                                .order-form-accordion__button.order-form-accordion__button_total 
-                                    span Сформировать счет на оплату
+                                        .order-form-accordion__text.order-form-accordion__text_total Заказ #154
+                                        ul.order-form-accordion__total                              
+                                            li.order-form-accordion__total-li
+                                                span.order-form-accordion__total-name  Сумма
+                                                span.order-form-accordion__total  1 400 157 ₽
+                                            li.order-form-accordion__total-li
+                                                span.order-form-accordion__total-name  Сроки изготовления
+                                                span.order-form-accordion__total  7 дней
+                                            li.order-form-accordion__total-li
+                                                span.order-form-accordion__total-name  Персональный менеджер
+                                                span.order-form-accordion__total  Анна Галенда
+                                .order-form-accordion__button-wrap
+                                    .order-form-accordion__button.order-form-accordion__button_total 
+                                        span Сформировать счет на оплату
 
         .order-form-success
             .order-form-success__title Спасибо!
