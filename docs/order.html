@@ -69,11 +69,11 @@
               <div class="order-form__accordion">
                 <div class="order-form-accordion">
                   <div class="order-form-accordion__item order-form-accordion__item_active">
-                    <div class="order-form-accordion__head">
+                    <div class="order-form-accordion__head order-form-accordion__head">
                       <div class="order-form-accordion__title">1 шаг <span>–Реквизиты </span></div>
-                      <div class="order-form-accordion__edit">Изменить</div>
+                      <div class="order-form-accordion__edit hidden">Изменить</div>
                     </div>
-                    <div class="order-form-accordion__body">
+                    <div class="order-form-accordion__body order-form-accordion__body">
                       <div class="order-form-accordion__text">Автозаполнение по ИНН</div>
                       <div class="order-form-accordion__body-inner">
                         <div class="order-form-accordion__col"><input type="text" placeholder="Введите ИНН" class="order-form-accordion__input order-form-accordion__input_mini"></div>
@@ -82,14 +82,14 @@
                         </div>
                       </div>
                       <div class="order-form-accordion__button-wrap">
-                        <div class="order-form-accordion__button"> <span>Продолжить оформление</span></div>
+                        <div class="order-form-accordion__button order-form-accordion__button_active"> <span>Продолжить оформление</span></div>
                       </div>
                     </div>
                   </div>
                   <div class="order-form-accordion__item">
                     <div class="order-form-accordion__head">
                       <div class="order-form-accordion__title">2 шаг <span>–Выбор доставки</span></div>
-                      <div class="order-form-accordion__edit">Изменить</div>
+                      <div class="order-form-accordion__edit hidden">Изменить</div>
                     </div>
                     <div class="order-form-accordion__body">
                       <div class="order-form-accordion__body-inner">
@@ -137,9 +137,7 @@
                           </ul>
                         </div>
                       </div>
-                      <div class="order-form-accordion__button-wrap">
-                        <div class="order-form-accordion__button order-form-accordion__button_total"> <span>Сформировать счет на оплату</span></div>
-                      </div>
+                      <div class="order-form-accordion__button-wrap"><label for="order-form-accordion__submit" class="order-form-accordion__button order-form-accordion__button_total"> <input type="submit" id="order-form-accordion__submit" hidden><span>Сформировать счет на оплату</span></label></div>
                     </div>
                   </div>
                 </div>

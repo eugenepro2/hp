@@ -45,8 +45,12 @@
         height: 31px
         background: url('../img/fav.svg') no-repeat 50% 50%
         cursor: pointer
+        opacity: 0.5
         &_active
             background: url('../img/fav-active.svg') no-repeat 50% 50%
+            opacity: 1
+        &:hover
+            opacity: 1
 
 @media (max-width: 1024px)
     .catalog-card

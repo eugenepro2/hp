@@ -97,6 +97,13 @@
         width: 486px
     &__search
         position: relative
+        &:hover
+            .footer__search-input
+                border: solid 1px #ded3c8
+                &::placeholder
+                    color: #3e2311
+            .footer__search-icon
+                background: url('../img/svgo/search-hover.svg') no-repeat 50% 50%
     &__search-input
         padding-left: 46px
         position: relative
@@ -108,6 +115,11 @@
         &::placeholder
             font-size: 16px
             color: #b3b3b3
+        &:hover
+            border: solid 1px #ded3c8
+            &::placeholder
+                color: #3e2311
+
            
     &__search-icon
         position: absolute

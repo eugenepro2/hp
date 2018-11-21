@@ -10,6 +10,7 @@
         display: flex
         flex-wrap: wrap
     &__button
+        box-sizing: border-box
         display: flex
         justify-content: space-between
         margin-right: 8px
@@ -20,9 +21,16 @@
         border-radius: 14px
         border: solid 1px #f0eae4
         cursor: pointer
+        &:hover
+            border-color: #ded3c8
         &_active
+            border-color: #34ab9c
             color: #ffffff
             background-color: #34ab9c
+            &:hover
+                background-color: #169787
+                border-color: #169787
+        
     &__img
         display: none
         box-sizing: border-box
@@ -75,9 +83,24 @@
         height: 24px
         background: url('../img/svgo/close-big.svg') no-repeat 50% 50%
         background-size: contain
+    &__menu-button
+        display: none
+        justify-content: center
+        align-items: center
+        position: sticky
+        left: 0
+        right: 0
+        bottom: 0
+        height: 60px
+        background-color: #f6773e
+        color: #ffffff
+        font-size: 16px
+        line-height: 1.5
+    
 @media (max-width: 1024px)
     .catalog-tags
-
+        
+                
 
 @media (max-width: 768px)
     .catalog-tags
@@ -106,11 +129,12 @@
         &__mobile-menu
             display: flex
         &__mobile-header
+            padding: 20px
             display: flex
         &__mobile-list
             width: 100%
             height: 100vh
-            padding: 20px
+            padding: 0
             position: fixed
             top: 0
             left: -320px
@@ -118,7 +142,7 @@
             z-index: 100
             overflow-y: scroll
         &__list
-            margin-top: 35px
+            padding: 20px
             flex-direction: column
             
         &__button
@@ -128,5 +152,10 @@
             &_active
                 background: none
                 color: #644733
+                &:hover
+                    background-color: transparent
+                    border-color: transparent
         &__img
             display: block
+        &__menu-button
+            display: flex

@@ -41,16 +41,21 @@
     &__li
         margin-bottom: 14px
     &__dots
-        position: absolute
-        z-index: 10
-        height: 10px
-        left: 50%
-        bottom: 50px
-        margin-left: -585px
-        max-width: 1170px
-        width: 100% 
+        text-align: left
+        margin-top: -50px
+        // position: absolute
+        // z-index: 10
+        // height: 10px
+        // left: 50%
+        // bottom: 50px
+        // margin-left: -585px
+        // max-width: 1170px
+        // width: 100% 
+
         // change default classes
         .owl-dot
+            position: relative
+            z-index: 10
             margin-right: 20px
             width: 10px
             height: 10px
@@ -70,8 +75,8 @@
             width: 897px
             
         &__dots
-            width: 867px
-            margin-left: -434px
+            // width: 867px
+            // margin-left: -434px
 @media (max-width: 768px)
     .index-slider
         height: 480px
@@ -95,8 +100,8 @@
             margin-top: 0
             font-size: 16px
         &__dots
-            width: 738px
-            margin-left: -364px
+            // width: 738px
+            // margin-left: -364px
 @media (max-width: 320px)
     .index-slider
         height: 240px
@@ -128,3 +133,5 @@
             line-height: 1.25
         &__li
             margin-bottom: 6px
+        &__dots
+            text-align: center

@@ -20,13 +20,12 @@
 
                 .order-form__accordion
                     .order-form-accordion
-
                         .order-form-accordion__item.order-form-accordion__item_active
-                            .order-form-accordion__head
+                            .order-form-accordion__head.order-form-accordion__head
                                 .order-form-accordion__title 1 шаг 
                                     span –Реквизиты 
-                                .order-form-accordion__edit Изменить
-                            .order-form-accordion__body
+                                .order-form-accordion__edit.hidden Изменить
+                            .order-form-accordion__body.order-form-accordion__body
                                 .order-form-accordion__text Автозаполнение по ИНН
                                 .order-form-accordion__body-inner                        
                                     .order-form-accordion__col
@@ -41,14 +40,14 @@
                                         input.order-form-accordion__input(type="text" placeholder="Р/С") 
                                         input.order-form-accordion__input(type="text" placeholder="К/С") 
                                 .order-form-accordion__button-wrap
-                                    .order-form-accordion__button 
+                                    .order-form-accordion__button.order-form-accordion__button_active  
                                         span Продолжить оформление
 
                         .order-form-accordion__item
                             .order-form-accordion__head
                                 .order-form-accordion__title 2 шаг 
                                     span –Выбор доставки
-                                .order-form-accordion__edit Изменить
+                                .order-form-accordion__edit.hidden Изменить
                             .order-form-accordion__body
                                 .order-form-accordion__body-inner 
                                     .order-form-accordion__props
@@ -116,7 +115,8 @@
                                                 span.order-form-accordion__total-name  Персональный менеджер
                                                 span.order-form-accordion__total  Анна Галенда
                                 .order-form-accordion__button-wrap
-                                    .order-form-accordion__button.order-form-accordion__button_total 
+                                    label(for="order-form-accordion__submit").order-form-accordion__button.order-form-accordion__button_total 
+                                        input(type="submit" id="order-form-accordion__submit" hidden)
                                         span Сформировать счет на оплату
 
         .order-form-success

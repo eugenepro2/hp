@@ -23,11 +23,18 @@
         right: 0
         width: 204px
         cursor: pointer
+        &:hover
+            .card-item__favs-img
+                opacity: 1
+            .card-item__favs-text
+                color: #ee5f1f
     &__favs-img
+        opacity: 0.5
         width: 32px
         height: 32px
         background: url('../img/fav.svg') no-repeat 50% 50%
         &_active
+            opacity: 1
             background: url('../img/fav-active.svg') no-repeat 50% 50%
     &__favs-text
         margin-left: 13px
@@ -228,7 +235,7 @@
     &__info
         box-sizing: border-box
         padding: 26px 30px
-        display: flex
+        display: none
         justify-content: space-between
         &_active
             display: flex
