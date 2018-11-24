@@ -15,10 +15,10 @@
     &__logo
         width: 240px
         height: 39px
-        background: url('../img/logo.png') no-repeat 50% 50%
+        background: url('/img/logo.png') no-repeat 50% 50%
         background-size: contain
         &_dark
-            background: url('../img/logo-dark.png') no-repeat 50% 50%
+            background: url('/img/logo-dark.png') no-repeat 50% 50%
             background-size: contain
             
     &__links
@@ -90,12 +90,12 @@
         width: 26px
         height: 16px
         cursor: pointer
-        background: url('../img/burger-dark.svg') no-repeat 50% 100%
+        background: url('/img/burger-dark.svg') no-repeat 50% 100%
         background-size: contain
         &_active
             width: 25px
             height: 24px
-            background: url('../img/close-big.svg') no-repeat 50% 100%
+            background: url('/img/close-big.svg') no-repeat 50% 100% 
     &_dark
         background-color: #492b26
         color: #f8f5f2
@@ -103,7 +103,7 @@
         a
             color: #f8f5f2
         .header__burger
-            background: url('../img/svgo/burger.svg') no-repeat 50% 100%
+            background: url('/img/burger.svg') no-repeat 50% 100%
     &_bg
         &::before
             position: absolute
@@ -113,7 +113,7 @@
             top: 0
             height: 420px
             z-index: -1
-            background: url('../img/header-bg.png') no-repeat 50% 100%
+            background: url('/img/header-bg.png') no-repeat 50% 100%
             background-size: cover
     &_fixed
         position: fixed
@@ -235,7 +235,10 @@
             line-height: 1.13
         &__burger
             display: block
-
+        &_dark
+            .header__links_sidebar
+                a
+                    color: #644733
 @media (max-width: 320px)
     .header
         &__contacts
@@ -268,3 +271,4 @@
             font-size: 16px
             line-height: 1.13
             color: #ffffff
+        

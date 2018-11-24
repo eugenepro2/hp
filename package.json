@@ -71,6 +71,9 @@
     "webpack-glsl-loader": "^1.0.1"
   },
   "dependencies": {
+    "current-device": "^0.7.8",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-bundle": "^1.12.1-migrate",
     "owl.carousel": "^2.3.4"
   }
 }
