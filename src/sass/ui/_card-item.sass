@@ -94,16 +94,19 @@
         margin-left: 10px
         display: flex
         flex-direction: column
+        height: 390px
+        justify-content: space-between
     &__mini
         box-sizing: border-box
-        margin-bottom: 6px
         width: 70px
         height: 70px
         border-radius: 5px
-        background: url('https://via.placeholder.com/70x70.png') no-repeat 50% 50%
+        background-size: cover
         cursor: pointer
-        &_active
+        &.active
             border: 2px solid #f6773e
+        &:not(:last-child)
+            margin-bottom: 6px
 
 
 
@@ -142,7 +145,7 @@
         color: #5b4630
     &__input
         box-sizing: border-box
-        padding-left: 16px
+        padding-left: 8px
         width: 67px
         height: 46px
         border-radius: 2px
@@ -208,7 +211,6 @@
 
 .card-item-tabs
     margin-top: 55px
-    min-height: 331px
     border-radius: 5px
     background-color: #ffffff
     &__head
@@ -226,7 +228,7 @@
         line-height: 1.33
         color: #a2a2a1
         cursor: pointer
-        &_active
+        &.active
             color: #5b4630
             border-bottom: 3px solid #f6773e
     &__body
@@ -235,15 +237,14 @@
     &__info
         box-sizing: border-box
         padding: 26px 30px
-        display: none
         justify-content: space-between
-        &_active
-            display: flex
     &__text
-        width: 530px
         font-size: 16px
         line-height: 1.75
         color: #644733
+        & ul
+            list-style: disc
+            padding-left: 20px
 
 @media (max-width: 1024px)
     .card-item-img
@@ -364,6 +365,8 @@
             flex-direction: column 
             border-radius: 5px
             background-color: #ffffff
+        &__col
+            width: 100%
         &__item
             box-sizing: border-box
             padding: 14px 10px
